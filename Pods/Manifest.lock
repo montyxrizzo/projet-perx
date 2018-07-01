@@ -1,0 +1,24 @@
+PODS:
+  - CollectionViewSlantedLayout (3.0.1)
+  - SideMenu (4.0.0)
+  - TTGEmojiRate (0.3.0)
+
+DEPENDENCIES:
+  - CollectionViewSlantedLayout
+  - SideMenu
+  - TTGEmojiRate
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - CollectionViewSlantedLayout
+    - SideMenu
+    - TTGEmojiRate
+
+SPEC CHECKSUMS:
+  CollectionViewSlantedLayout: 8c8ebc112e3ac1c3318a916aa9c8d9f1901f0dd9
+  SideMenu: 70ee5657df63ec3382660ec4ef470bf1cf5db07d
+  TTGEmojiRate: 9b295b22e42874acfd717a9ae606e259995b83d0
+
+PODFILE CHECKSUM: 0188449d272e7243b4aa8af98b0e3658367e79ca
+
+COCOAPODS: 1.5.3

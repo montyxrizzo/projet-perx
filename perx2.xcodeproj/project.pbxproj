@@ -7,23 +7,38 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		66E945859A2E5A4575724D4D /* Pods_perx2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D194AFED45D90DBA7C55FD /* Pods_perx2.framework */; };
 		837EADF520E8362800837DEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EADF420E8362800837DEE /* AppDelegate.swift */; };
-		837EADF720E8362800837DEE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EADF620E8362800837DEE /* ViewController.swift */; };
 		837EADFA20E8362800837DEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837EADF820E8362800837DEE /* Main.storyboard */; };
 		837EADFD20E8362800837DEE /* perx2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 837EADFB20E8362800837DEE /* perx2.xcdatamodeld */; };
-		837EADFF20E8362A00837DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837EADFE20E8362A00837DEE /* Assets.xcassets */; };
-		837EAE0220E8362A00837DEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837EAE0020E8362A00837DEE /* LaunchScreen.storyboard */; };
+		837EAE1820E9265C00837DEE /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EAE1720E9265C00837DEE /* SettingsController.swift */; };
+		837EAE1A20E9267600837DEE /* CustomCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EAE1920E9267600837DEE /* CustomCollectionCell.swift */; };
+		837EAE1D20E9268700837DEE /* UIColor+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EAE1C20E9268600837DEE /* UIColor+Random.swift */; };
+		837EAE2220E92DED00837DEE /* BrandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EAE2120E92B7300837DEE /* BrandViewController.swift */; };
+		837EAE2520E92E1000837DEE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 837EAE0320E8362A00837DEE /* Info.plist */; };
+		837EAE2E20E92F6F00837DEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837EAE2C20E92F6100837DEE /* LaunchScreen.storyboard */; };
+		837EAE3020E92F8A00837DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837EAE2F20E92F8A00837DEE /* Assets.xcassets */; };
+		83FE1DCE20E93122003597A8 /* covers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83FE1DCD20E93122003597A8 /* covers.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		65D194AFED45D90DBA7C55FD /* Pods_perx2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_perx2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		796F8DB3433D122EBE890DE7 /* Pods-perx2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-perx2.release.xcconfig"; path = "Pods/Target Support Files/Pods-perx2/Pods-perx2.release.xcconfig"; sourceTree = "<group>"; };
+		7ECCC5EB20EAF1BB3F8EA19B /* Pods-perx2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-perx2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-perx2/Pods-perx2.debug.xcconfig"; sourceTree = "<group>"; };
 		837EADF120E8362800837DEE /* perx2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = perx2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		837EADF420E8362800837DEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		837EADF620E8362800837DEE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		837EADF920E8362800837DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		837EADFC20E8362800837DEE /* perx2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = perx2.xcdatamodel; sourceTree = "<group>"; };
-		837EADFE20E8362A00837DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		837EAE0120E8362A00837DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		837EAE0320E8362A00837DEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		837EAE1720E9265C00837DEE /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		837EAE1920E9267600837DEE /* CustomCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionCell.swift; sourceTree = "<group>"; };
+		837EAE1C20E9268600837DEE /* UIColor+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIColor+Random.swift"; path = "CollectionViewSlantedLayoutDemo/UIColor+Random.swift"; sourceTree = "<group>"; };
+		837EAE1E20E926C800837DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CollectionViewSlantedLayoutDemo/Assets.xcassets; sourceTree = "<group>"; };
+		837EAE2120E92B7300837DEE /* BrandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandViewController.swift; sourceTree = "<group>"; };
+		837EAE2C20E92F6100837DEE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		837EAE2F20E92F8A00837DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Downloads/Final_Project/Pinterest/Assets/Assets.xcassets; sourceTree = "<group>"; };
+		83FE1DCD20E93122003597A8 /* covers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = covers.plist; path = Controllers/covers.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +46,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				66E945859A2E5A4575724D4D /* Pods_perx2.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4395CF39941F1ED204565E6E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				65D194AFED45D90DBA7C55FD /* Pods_perx2.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		837EADE820E8362700837DEE = {
 			isa = PBXGroup;
 			children = (
 				837EADF320E8362800837DEE /* perx2 */,
 				837EADF220E8362800837DEE /* Products */,
+				D843CD11234321B342F08BFF /* Pods */,
+				4395CF39941F1ED204565E6E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,14 +83,45 @@
 			isa = PBXGroup;
 			children = (
 				837EADF420E8362800837DEE /* AppDelegate.swift */,
-				837EADF620E8362800837DEE /* ViewController.swift */,
+				837EAE2020E92B1900837DEE /* Views */,
+				837EAE1F20E92B0500837DEE /* Controllers */,
+				837EAE1E20E926C800837DEE /* Assets.xcassets */,
+				837EAE2F20E92F8A00837DEE /* Assets.xcassets */,
+				837EAE1C20E9268600837DEE /* UIColor+Random.swift */,
 				837EADF820E8362800837DEE /* Main.storyboard */,
-				837EADFE20E8362A00837DEE /* Assets.xcassets */,
 				837EAE0020E8362A00837DEE /* LaunchScreen.storyboard */,
+				837EAE2C20E92F6100837DEE /* LaunchScreen.storyboard */,
+				83FE1DCD20E93122003597A8 /* covers.plist */,
 				837EAE0320E8362A00837DEE /* Info.plist */,
 				837EADFB20E8362800837DEE /* perx2.xcdatamodeld */,
 			);
 			path = perx2;
+			sourceTree = "<group>";
+		};
+		837EAE1F20E92B0500837DEE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				837EAE1720E9265C00837DEE /* SettingsController.swift */,
+				837EAE2120E92B7300837DEE /* BrandViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		837EAE2020E92B1900837DEE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				837EAE1920E9267600837DEE /* CustomCollectionCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D843CD11234321B342F08BFF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7ECCC5EB20EAF1BB3F8EA19B /* Pods-perx2.debug.xcconfig */,
+				796F8DB3433D122EBE890DE7 /* Pods-perx2.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 837EAE0620E8362A00837DEE /* Build configuration list for PBXNativeTarget "perx2" */;
 			buildPhases = (
+				B3B95C1E190DC8ED900021A3 /* [CP] Check Pods Manifest.lock */,
 				837EADED20E8362700837DEE /* Sources */,
 				837EADEE20E8362700837DEE /* Frameworks */,
 				837EADEF20E8362700837DEE /* Resources */,
+				4630B0246179AB5AAAF5D4AB /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,21 +184,69 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				837EAE0220E8362A00837DEE /* LaunchScreen.storyboard in Resources */,
-				837EADFF20E8362A00837DEE /* Assets.xcassets in Resources */,
+				837EAE2E20E92F6F00837DEE /* LaunchScreen.storyboard in Resources */,
+				83FE1DCE20E93122003597A8 /* covers.plist in Resources */,
+				837EAE2520E92E1000837DEE /* Info.plist in Resources */,
+				837EAE3020E92F8A00837DEE /* Assets.xcassets in Resources */,
 				837EADFA20E8362800837DEE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4630B0246179AB5AAAF5D4AB /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-perx2/Pods-perx2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/CollectionViewSlantedLayout/CollectionViewSlantedLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/TTGEmojiRate/TTGEmojiRate.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CollectionViewSlantedLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTGEmojiRate.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-perx2/Pods-perx2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B3B95C1E190DC8ED900021A3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-perx2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		837EADED20E8362700837DEE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				837EADF720E8362800837DEE /* ViewController.swift in Sources */,
+				837EAE2220E92DED00837DEE /* BrandViewController.swift in Sources */,
+				837EAE1820E9265C00837DEE /* SettingsController.swift in Sources */,
+				837EAE1A20E9267600837DEE /* CustomCollectionCell.swift in Sources */,
 				837EADF520E8362800837DEE /* AppDelegate.swift in Sources */,
+				837EAE1D20E9268700837DEE /* UIColor+Random.swift in Sources */,
 				837EADFD20E8362800837DEE /* perx2.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,6 +389,7 @@
 		};
 		837EAE0720E8362A00837DEE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7ECCC5EB20EAF1BB3F8EA19B /* Pods-perx2.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +408,7 @@
 		};
 		837EAE0820E8362A00837DEE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 796F8DB3433D122EBE890DE7 /* Pods-perx2.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

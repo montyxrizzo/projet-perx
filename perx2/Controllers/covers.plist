@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>name</key>
+		<string>Apple</string>
+		<key>address</key>
+		<string>1900 Walnut St</string>
+		<key>picture</key>
+		<string>1</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Sephora</string>
+		<key>address</key>
+		<string>289 Chesnut St.</string>
+		<key>picture</key>
+		<string>2</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>Starbucks</string>
+		<key>address</key>
+		<string>2020 Market St</string>
+		<key>picture</key>
+		<string>3</string>
+	</dict>
+	<dict>
+		<key>name</key>
+		<string>WholeFoods</string>
+		<key>address</key>
+		<string>Red Hot Chili Peppers</string>
+		<key>picture</key>
+		<string>4</string>
+	</dict>
+</array>
+</plist>
