@@ -15,9 +15,13 @@
 		837EAE1A20E9267600837DEE /* CustomCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EAE1920E9267600837DEE /* CustomCollectionCell.swift */; };
 		837EAE1D20E9268700837DEE /* UIColor+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EAE1C20E9268600837DEE /* UIColor+Random.swift */; };
 		837EAE2220E92DED00837DEE /* BrandViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EAE2120E92B7300837DEE /* BrandViewController.swift */; };
-		837EAE2520E92E1000837DEE /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 837EAE0320E8362A00837DEE /* Info.plist */; };
 		837EAE2E20E92F6F00837DEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837EAE2C20E92F6100837DEE /* LaunchScreen.storyboard */; };
 		837EAE3020E92F8A00837DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837EAE2F20E92F8A00837DEE /* Assets.xcassets */; };
+		83D28E8F20E9C58300D36056 /* CandyTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D28E8A20E9C58100D36056 /* CandyTheme.swift */; };
+		83D28E9020E9C58300D36056 /* Candy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D28E8B20E9C58100D36056 /* Candy.swift */; };
+		83D28E9120E9C58300D36056 /* SearchFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D28E8C20E9C58200D36056 /* SearchFooter.swift */; };
+		83D28E9220E9C58300D36056 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D28E8D20E9C58200D36056 /* MasterViewController.swift */; };
+		83D28E9320E9C58300D36056 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D28E8E20E9C58200D36056 /* DetailViewController.swift */; };
 		83FE1DCE20E93122003597A8 /* covers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83FE1DCD20E93122003597A8 /* covers.plist */; };
 /* End PBXBuildFile section */
 
@@ -38,6 +42,11 @@
 		837EAE2120E92B7300837DEE /* BrandViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandViewController.swift; sourceTree = "<group>"; };
 		837EAE2C20E92F6100837DEE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		837EAE2F20E92F8A00837DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Downloads/Final_Project/Pinterest/Assets/Assets.xcassets; sourceTree = "<group>"; };
+		83D28E8A20E9C58100D36056 /* CandyTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandyTheme.swift; sourceTree = "<group>"; };
+		83D28E8B20E9C58100D36056 /* Candy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Candy.swift; sourceTree = "<group>"; };
+		83D28E8C20E9C58200D36056 /* SearchFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFooter.swift; sourceTree = "<group>"; };
+		83D28E8D20E9C58200D36056 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		83D28E8E20E9C58200D36056 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		83FE1DCD20E93122003597A8 /* covers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = covers.plist; path = Controllers/covers.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -102,6 +111,11 @@
 			isa = PBXGroup;
 			children = (
 				837EAE1720E9265C00837DEE /* SettingsController.swift */,
+				83D28E8B20E9C58100D36056 /* Candy.swift */,
+				83D28E8A20E9C58100D36056 /* CandyTheme.swift */,
+				83D28E8E20E9C58200D36056 /* DetailViewController.swift */,
+				83D28E8D20E9C58200D36056 /* MasterViewController.swift */,
+				83D28E8C20E9C58200D36056 /* SearchFooter.swift */,
 				837EAE2120E92B7300837DEE /* BrandViewController.swift */,
 			);
 			path = Controllers;
@@ -186,7 +200,6 @@
 			files = (
 				837EAE2E20E92F6F00837DEE /* LaunchScreen.storyboard in Resources */,
 				83FE1DCE20E93122003597A8 /* covers.plist in Resources */,
-				837EAE2520E92E1000837DEE /* Info.plist in Resources */,
 				837EAE3020E92F8A00837DEE /* Assets.xcassets in Resources */,
 				837EADFA20E8362800837DEE /* Main.storyboard in Resources */,
 			);
@@ -242,10 +255,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83D28E9320E9C58300D36056 /* DetailViewController.swift in Sources */,
+				83D28E9220E9C58300D36056 /* MasterViewController.swift in Sources */,
 				837EAE2220E92DED00837DEE /* BrandViewController.swift in Sources */,
 				837EAE1820E9265C00837DEE /* SettingsController.swift in Sources */,
+				83D28E8F20E9C58300D36056 /* CandyTheme.swift in Sources */,
 				837EAE1A20E9267600837DEE /* CustomCollectionCell.swift in Sources */,
+				83D28E9120E9C58300D36056 /* SearchFooter.swift in Sources */,
 				837EADF520E8362800837DEE /* AppDelegate.swift in Sources */,
+				83D28E9020E9C58300D36056 /* Candy.swift in Sources */,
 				837EAE1D20E9268700837DEE /* UIColor+Random.swift in Sources */,
 				837EADFD20E8362800837DEE /* perx2.xcdatamodeld in Sources */,
 			);
