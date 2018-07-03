@@ -1,2 +1,4 @@
 github "jonkykong/SideMenu" "master"
 github "yacir/CollectionViewSlantedLayout" "master"
+github "AppliKeySolutions/VegaScroll"
+github "Ramotion/folding-cell"

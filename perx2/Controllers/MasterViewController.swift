@@ -23,6 +23,7 @@
 import UIKit
 import Alamofire
 import AlamofireImage
+import ElongationPreview
 
 class MasterViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
   let URL_GET_DATA = "https://simplifiedcoding.net/demos/marvel/"
@@ -42,33 +43,41 @@ class MasterViewController: UIViewController, UITableViewDataSource, UITableView
   // MARK: - View Setup
   override func viewDidLoad() {
     super.viewDidLoad()
-    //fetching data from web api
-    Alamofire.request(URL_GET_DATA).responseJSON { response in
-        
-        //getting json
-        if let json = response.result.value {
-            
-            //converting json to NSArray
-            let companiesArray : NSArray  = json as! NSArray
-            
-            //traversing through all elements of the array
-            for i in 0..<companiesArray.count{
-                
-                //adding hero values to the hero list
-                self.companies.append(Company(
-                    name: (companiesArray[i] as AnyObject).value(forKey: "name") as? String,
-                    category: (companiesArray[i] as AnyObject).value(forKey: "category") as? String,
-                    imageurl: ((companiesArray[i] as AnyObject).value(forKey: "imageurl") as? String)!
-                ))
-                
-            }
-            
-            //displaying data in tableview
-            self.tableView.reloadData()
-        }
-        
-    }
     
+    // Setup the Search Controller
+    searchController.searchResultsUpdater = self
+    searchController.obscuresBackgroundDuringPresentation = false
+    searchController.searchBar.placeholder = "Search Brands"
+    navigationItem.searchController = searchController
+    definesPresentationContext = true
+    
+//    //fetching data from web api
+//    Alamofire.request(URL_GET_DATA).responseJSON { response in
+//
+//        //getting json
+//        if let json = response.result.value {
+//
+//            //converting json to NSArray
+//            let companiesArray : NSArray  = json as! NSArray
+//
+//            //traversing through all elements of the array
+//            for i in 0..<companiesArray.count{
+//
+//                //adding hero values to the hero list
+//                self.companies.append(Company(
+//                    name: (companiesArray[i] as AnyObject).value(forKey: "name") as? String,
+//                    category: (companiesArray[i] as AnyObject).value(forKey: "category") as? String,
+//                    imageurl: ((companiesArray[i] as AnyObject).value(forKey: "imageurl") as? String)!
+//                ))
+//
+//            }
+//
+//            //displaying data in tableview
+//            self.tableView.reloadData()
+//        }
+//
+//    }
+//
     // Setup the Search Controller
     searchController.searchResultsUpdater = self
     searchController.obscuresBackgroundDuringPresentation = false
@@ -103,24 +112,24 @@ class MasterViewController: UIViewController, UITableViewDataSource, UITableView
     ]
    
     if let splitViewController = splitViewController {
-      let controllers = splitViewController.viewControllers
-      detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
+        let controllers = splitViewController.viewControllers
+        detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
     }
-  }
-  
-  override func viewWillAppear(_ animated: Bool) {
-    if splitViewController!.isCollapsed {
-      if let selectionIndexPath = tableView.indexPathForSelectedRow {
-        tableView.deselectRow(at: selectionIndexPath, animated: animated)
-      }
     }
-    super.viewWillAppear(animated)
-  }
-  
-  override func didReceiveMemoryWarning() {
-    super.didReceiveMemoryWarning()
-  }
-  
+    
+    override func viewWillAppear(_ animated: Bool) {
+        if splitViewController!.isCollapsed {
+            if let selectionIndexPath = tableView.indexPathForSelectedRow {
+                tableView.deselectRow(at: selectionIndexPath, animated: animated)
+            }
+        }
+        super.viewWillAppear(animated)
+    }
+    
+    override func didReceiveMemoryWarning() {
+        super.didReceiveMemoryWarning()
+    }
+    
   // MARK: - Table View
   func numberOfSections(in tableView: UITableView) -> Int {
     return 1

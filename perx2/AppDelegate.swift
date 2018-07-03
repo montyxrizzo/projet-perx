@@ -10,9 +10,12 @@ import UIKit
 import CoreData
 import GoogleMaps
 import GooglePlaces
+import GooglePlacePicker
 
 // 1
 let googleApiKey = "AIzaSyD4_RrnO9ar6LZcNOTuK9OVdzH46w9-_j0"
+internal let kPlacesAPIKey = "AIzaSyD4_RrnO9ar6LZcNOTuK9OVdzH46w9-_j0"
+internal let kMapsAPIKey = "AIzaSyD4_RrnO9ar6LZcNOTuK9OVdzH46w9-_j0"
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {

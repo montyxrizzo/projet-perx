@@ -1,0 +1,4 @@
+framework module VegaScroll {
+    header "VegaScroll-Swift.h"
+    requires objc
+}

@@ -3,48 +3,91 @@ PODS:
   - AlamofireImage (3.3.1):
     - Alamofire (~> 4.5)
   - CollectionViewSlantedLayout (3.0.1)
+  - ElongationPreview (1.1.2)
+  - Firebase/CoreOnly (5.4.0):
+    - FirebaseCore (= 5.0.5)
+  - Firebase/Database (5.4.0):
+    - Firebase/CoreOnly
+    - FirebaseDatabase (= 5.0.2)
+  - FirebaseCore (5.0.5):
+    - "GoogleToolboxForMac/NSData+zlib (~> 2.1)"
+  - FirebaseDatabase (5.0.2):
+    - FirebaseCore (~> 5.0)
+    - leveldb-library (~> 1.18)
+  - FoldingCell (3.1.1)
   - GoogleMaps (2.7.0):
     - GoogleMaps/Maps (= 2.7.0)
   - GoogleMaps/Base (2.7.0)
   - GoogleMaps/Maps (2.7.0):
     - GoogleMaps/Base
+  - GooglePlacePicker (2.7.0):
+    - GoogleMaps (= 2.7.0)
+    - GooglePlaces (= 2.7.0)
   - GooglePlaces (2.7.0):
     - GoogleMaps/Base (= 2.7.0)
+  - GoogleToolboxForMac/Defines (2.1.4)
+  - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
+    - GoogleToolboxForMac/Defines (= 2.1.4)
+  - leveldb-library (1.20)
   - SideMenu (4.0.0)
   - SwiftyJSON (4.1.0)
   - TTGEmojiRate (0.3.0)
+  - VegaScrollFlowLayout (1.1)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
   - AlamofireImage
   - CollectionViewSlantedLayout
+  - ElongationPreview
+  - Firebase/Database
+  - FoldingCell
   - GoogleMaps
+  - GooglePlacePicker
   - GooglePlaces
   - SideMenu
   - SwiftyJSON
   - TTGEmojiRate
+  - VegaScrollFlowLayout
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireImage
     - CollectionViewSlantedLayout
+    - ElongationPreview
+    - Firebase
+    - FirebaseCore
+    - FirebaseDatabase
+    - FoldingCell
     - GoogleMaps
+    - GooglePlacePicker
     - GooglePlaces
+    - GoogleToolboxForMac
+    - leveldb-library
     - SideMenu
     - SwiftyJSON
     - TTGEmojiRate
+    - VegaScrollFlowLayout
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
   CollectionViewSlantedLayout: 8c8ebc112e3ac1c3318a916aa9c8d9f1901f0dd9
+  ElongationPreview: a1b53f61d2086c0ce5c2061e5233bff25b93917d
+  Firebase: d66f4f29c23f22d96808d9abc174d81d8eee968f
+  FirebaseCore: 42b3267233bd21a5abd54117ccc38ca3dd0f8e83
+  FirebaseDatabase: 27be5ac5bc75e0b17537b2bbfada8258addcc8cd
+  FoldingCell: 238c33ae8d9cd655090c9c4c5ff32596cfd18c6e
   GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
+  GooglePlacePicker: 59ea44db173c58486ad6123993e81feefcbce9c3
   GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
+  GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
+  leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   SideMenu: 70ee5657df63ec3382660ec4ef470bf1cf5db07d
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
   TTGEmojiRate: 9b295b22e42874acfd717a9ae606e259995b83d0
+  VegaScrollFlowLayout: 9158061f29179147755f937c2b21693fc5dbbac3
 
-PODFILE CHECKSUM: f40d61a7fe875c2c071f2cc0e406117db10e6746
+PODFILE CHECKSUM: 78964eef77fd76bd918571ade58435f612139f73
 
 COCOAPODS: 1.5.3

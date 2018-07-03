@@ -9,6 +9,18 @@
 /* Begin PBXBuildFile section */
 		66E945859A2E5A4575724D4D /* Pods_perx2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D194AFED45D90DBA7C55FD /* Pods_perx2.framework */; };
 		8305C1DC20EBCD36004D0F3E /* home_slow copy.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 8305C1DB20EBCD35004D0F3E /* home_slow copy.gpx */; };
+		8305C1E320EBDAE0004D0F3E /* DemoElongationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8305C1DD20EBDADB004D0F3E /* DemoElongationCell.xib */; };
+		8305C1E620EBDAE0004D0F3E /* Villa.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305C1E020EBDADD004D0F3E /* Villa.swift */; };
+		8305C1E720EBDAE0004D0F3E /* GridViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305C1E120EBDADE004D0F3E /* GridViewCell.swift */; };
+		8305C1EF20EBDB01004D0F3E /* Roboto-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8305C1E920EBDAF4004D0F3E /* Roboto-Regular.ttf */; };
+		8305C1F020EBDB01004D0F3E /* LoremSwiftum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305C1EA20EBDAF9004D0F3E /* LoremSwiftum.swift */; };
+		8305C1F120EBDB01004D0F3E /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8305C1EB20EBDAF9004D0F3E /* Roboto-Bold.ttf */; };
+		8305C1F220EBDB01004D0F3E /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305C1EC20EBDB00004D0F3E /* UIFont.swift */; };
+		8305C1F320EBDB01004D0F3E /* DepDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305C1ED20EBDB00004D0F3E /* DepDetailViewController.swift */; };
+		8305C1F420EBDB01004D0F3E /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8305C1EE20EBDB01004D0F3E /* Roboto-Medium.ttf */; };
+		8305C1F620EBDB14004D0F3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8305C1F520EBDB13004D0F3E /* Assets.xcassets */; };
+		8305C1F820EBDCBC004D0F3E /* DemoElongationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305C1F720EBDCBB004D0F3E /* DemoElongationCell.swift */; };
+		8305C1FA20EBE052004D0F3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305C1F920EBE051004D0F3E /* ViewController.swift */; };
 		8345A32E20EB9EAF00F17775 /* MarkerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8345A32A20EB9EAE00F17775 /* MarkerInfoView.xib */; };
 		8345A32F20EB9EAF00F17775 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345A32B20EB9EAE00F17775 /* UIViewExtension.swift */; };
 		8345A33020EB9EAF00F17775 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8345A32C20EB9EAF00F17775 /* Images.xcassets */; };
@@ -27,6 +39,10 @@
 		837EAE2220E92DED00837DEE /* PerkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EAE2120E92B7300837DEE /* PerkViewController.swift */; };
 		837EAE2E20E92F6F00837DEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837EAE2C20E92F6100837DEE /* LaunchScreen.storyboard */; };
 		837EAE3020E92F8A00837DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837EAE2F20E92F8A00837DEE /* Assets.xcassets */; };
+		83BC1FAC20EBF79B00565E7E /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 83BC1FA820EBF79000565E7E /* Fonts */; };
+		83BC1FAD20EBF79B00565E7E /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BC1FA920EBF79800565E7E /* MainTableViewController.swift */; };
+		83BC1FAE20EBF79B00565E7E /* DemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BC1FAA20EBF79A00565E7E /* DemoCell.swift */; };
+		83BC1FAF20EBF79B00565E7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83BC1FAB20EBF79A00565E7E /* Assets.xcassets */; };
 		83D28E8F20E9C58300D36056 /* CandyTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D28E8A20E9C58100D36056 /* CandyTheme.swift */; };
 		83D28E9020E9C58300D36056 /* Candy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D28E8B20E9C58100D36056 /* Candy.swift */; };
 		83D28E9120E9C58300D36056 /* SearchFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D28E8C20E9C58200D36056 /* SearchFooter.swift */; };
@@ -45,6 +61,18 @@
 		796F8DB3433D122EBE890DE7 /* Pods-perx2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-perx2.release.xcconfig"; path = "Pods/Target Support Files/Pods-perx2/Pods-perx2.release.xcconfig"; sourceTree = "<group>"; };
 		7ECCC5EB20EAF1BB3F8EA19B /* Pods-perx2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-perx2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-perx2/Pods-perx2.debug.xcconfig"; sourceTree = "<group>"; };
 		8305C1DB20EBCD35004D0F3E /* home_slow copy.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "home_slow copy.gpx"; sourceTree = "<group>"; };
+		8305C1DD20EBDADB004D0F3E /* DemoElongationCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DemoElongationCell.xib; sourceTree = "<group>"; };
+		8305C1E020EBDADD004D0F3E /* Villa.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Villa.swift; sourceTree = "<group>"; };
+		8305C1E120EBDADE004D0F3E /* GridViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridViewCell.swift; sourceTree = "<group>"; };
+		8305C1E920EBDAF4004D0F3E /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		8305C1EA20EBDAF9004D0F3E /* LoremSwiftum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoremSwiftum.swift; sourceTree = "<group>"; };
+		8305C1EB20EBDAF9004D0F3E /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		8305C1EC20EBDB00004D0F3E /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
+		8305C1ED20EBDB00004D0F3E /* DepDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DepDetailViewController.swift; path = "../../../Downloads/elongation-preview-master/ElongationPreviewDemo/DepDetailViewController.swift"; sourceTree = "<group>"; };
+		8305C1EE20EBDB01004D0F3E /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		8305C1F520EBDB13004D0F3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../Downloads/elongation-preview-master/ElongationPreviewDemo/Assets.xcassets"; sourceTree = "<group>"; };
+		8305C1F720EBDCBB004D0F3E /* DemoElongationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoElongationCell.swift; sourceTree = "<group>"; };
+		8305C1F920EBE051004D0F3E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../Downloads/elongation-preview-master/ElongationPreviewDemo/ViewController.swift"; sourceTree = "<group>"; };
 		8345A32A20EB9EAE00F17775 /* MarkerInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkerInfoView.xib; sourceTree = "<group>"; };
 		8345A32B20EB9EAE00F17775 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		8345A32C20EB9EAF00F17775 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -67,6 +95,10 @@
 		837EAE2120E92B7300837DEE /* PerkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerkViewController.swift; sourceTree = "<group>"; };
 		837EAE2C20E92F6100837DEE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		837EAE2F20E92F8A00837DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Downloads/Final_Project/Pinterest/Assets/Assets.xcassets; sourceTree = "<group>"; };
+		83BC1FA820EBF79000565E7E /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
+		83BC1FA920EBF79800565E7E /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
+		83BC1FAA20EBF79A00565E7E /* DemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCell.swift; sourceTree = "<group>"; };
+		83BC1FAB20EBF79A00565E7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../Downloads/folding-cell-master-2/FoldingCell/FoldingCell-Demo/Assets.xcassets"; sourceTree = "<group>"; };
 		83D28E8A20E9C58100D36056 /* CandyTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CandyTheme.swift; sourceTree = "<group>"; };
 		83D28E8B20E9C58100D36056 /* Candy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Candy.swift; sourceTree = "<group>"; };
 		83D28E8C20E9C58200D36056 /* SearchFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFooter.swift; sourceTree = "<group>"; };
@@ -133,11 +165,16 @@
 		837EADF320E8362800837DEE /* perx2 */ = {
 			isa = PBXGroup;
 			children = (
+				83BC1FAB20EBF79A00565E7E /* Assets.xcassets */,
+				83BC1FAA20EBF79A00565E7E /* DemoCell.swift */,
+				83BC1FA820EBF79000565E7E /* Fonts */,
+				83BC1FA920EBF79800565E7E /* MainTableViewController.swift */,
 				8345A33620EBA7DD00F17775 /* Models */,
 				837EADF420E8362800837DEE /* AppDelegate.swift */,
 				837EAE2020E92B1900837DEE /* Views */,
 				837EAE1F20E92B0500837DEE /* Controllers */,
 				83D28E9520E9D30F00D36056 /* walgreens.jpeg */,
+				8305C1F520EBDB13004D0F3E /* Assets.xcassets */,
 				83D28E9420E9D30E00D36056 /* 7-eleven.png */,
 				837EAE1E20E926C800837DEE /* Assets.xcassets */,
 				837EAE2F20E92F8A00837DEE /* Assets.xcassets */,
@@ -162,6 +199,16 @@
 				83D28E8B20E9C58100D36056 /* Candy.swift */,
 				83D28E8A20E9C58100D36056 /* CandyTheme.swift */,
 				83D28E8E20E9C58200D36056 /* DetailViewController.swift */,
+				8305C1DD20EBDADB004D0F3E /* DemoElongationCell.xib */,
+				8305C1E120EBDADE004D0F3E /* GridViewCell.swift */,
+				8305C1ED20EBDB00004D0F3E /* DepDetailViewController.swift */,
+				8305C1EA20EBDAF9004D0F3E /* LoremSwiftum.swift */,
+				8305C1EB20EBDAF9004D0F3E /* Roboto-Bold.ttf */,
+				8305C1EE20EBDB01004D0F3E /* Roboto-Medium.ttf */,
+				8305C1E920EBDAF4004D0F3E /* Roboto-Regular.ttf */,
+				8305C1EC20EBDB00004D0F3E /* UIFont.swift */,
+				8305C1F920EBE051004D0F3E /* ViewController.swift */,
+				8305C1E020EBDADD004D0F3E /* Villa.swift */,
 				83D28E8D20E9C58200D36056 /* MasterViewController.swift */,
 				83D28E8C20E9C58200D36056 /* SearchFooter.swift */,
 				837EAE2120E92B7300837DEE /* PerkViewController.swift */,
@@ -178,6 +225,7 @@
 				8345A32C20EB9EAF00F17775 /* Images.xcassets */,
 				8345A32D20EB9EAF00F17775 /* MarkerInfoView.swift */,
 				8345A32B20EB9EAE00F17775 /* UIViewExtension.swift */,
+				8305C1F720EBDCBB004D0F3E /* DemoElongationCell.swift */,
 				83D28EA020EACBE500D36056 /* CompanyTableViewCell.swift */,
 			);
 			path = Views;
@@ -253,14 +301,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83BC1FAC20EBF79B00565E7E /* Fonts in Resources */,
 				8345A33020EB9EAF00F17775 /* Images.xcassets in Resources */,
+				8305C1F120EBDB01004D0F3E /* Roboto-Bold.ttf in Resources */,
 				837EAE2E20E92F6F00837DEE /* LaunchScreen.storyboard in Resources */,
 				83D28E9620E9D31100D36056 /* 7-eleven.png in Resources */,
+				8305C1F620EBDB14004D0F3E /* Assets.xcassets in Resources */,
 				83FE1DCE20E93122003597A8 /* covers.plist in Resources */,
+				8305C1E320EBDAE0004D0F3E /* DemoElongationCell.xib in Resources */,
 				837EAE3020E92F8A00837DEE /* Assets.xcassets in Resources */,
+				8305C1EF20EBDB01004D0F3E /* Roboto-Regular.ttf in Resources */,
 				8345A32E20EB9EAF00F17775 /* MarkerInfoView.xib in Resources */,
 				83D28E9720E9D31100D36056 /* walgreens.jpeg in Resources */,
+				8305C1F420EBDB01004D0F3E /* Roboto-Medium.ttf in Resources */,
 				837EADFA20E8362800837DEE /* Main.storyboard in Resources */,
+				83BC1FAF20EBF79B00565E7E /* Assets.xcassets in Resources */,
 				8305C1DC20EBCD36004D0F3E /* home_slow copy.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -278,18 +333,28 @@
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/CollectionViewSlantedLayout/CollectionViewSlantedLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/ElongationPreview/ElongationPreview.framework",
+				"${BUILT_PRODUCTS_DIR}/FoldingCell/FoldingCell.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/TTGEmojiRate/TTGEmojiRate.framework",
+				"${BUILT_PRODUCTS_DIR}/VegaScrollFlowLayout/VegaScrollFlowLayout.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CollectionViewSlantedLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ElongationPreview.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FoldingCell.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTGEmojiRate.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/VegaScrollFlowLayout.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -304,11 +369,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-perx2/Pods-perx2-resources.sh",
 				"${PODS_ROOT}/GoogleMaps/Maps/Frameworks/GoogleMaps.framework/Resources/GoogleMaps.bundle",
+				"${PODS_ROOT}/GooglePlacePicker/Frameworks/GooglePlacePicker.framework/Resources/GooglePlacePicker.bundle",
 				"${PODS_ROOT}/GooglePlaces/Frameworks/GooglePlaces.framework/Resources/GooglePlaces.bundle",
 			);
 			name = "[CP] Copy Pods Resources";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GoogleMaps.bundle",
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlacePicker.bundle",
 				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/GooglePlaces.bundle",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,12 +415,20 @@
 				83D28E9320E9C58300D36056 /* DetailViewController.swift in Sources */,
 				83D28E9920E9D7FB00D36056 /* PerkTableViewCell.swift in Sources */,
 				83D28E9220E9C58300D36056 /* MasterViewController.swift in Sources */,
+				83BC1FAD20EBF79B00565E7E /* MainTableViewController.swift in Sources */,
+				8305C1E620EBDAE0004D0F3E /* Villa.swift in Sources */,
+				8305C1F820EBDCBC004D0F3E /* DemoElongationCell.swift in Sources */,
 				83D28EA120EACBE500D36056 /* CompanyTableViewCell.swift in Sources */,
+				8305C1F020EBDB01004D0F3E /* LoremSwiftum.swift in Sources */,
 				837EAE2220E92DED00837DEE /* PerkViewController.swift in Sources */,
 				8345A33A20EBA7F600F17775 /* PlaceMarker.swift in Sources */,
+				83BC1FAE20EBF79B00565E7E /* DemoCell.swift in Sources */,
 				837EAE1820E9265C00837DEE /* SettingsController.swift in Sources */,
 				83D28E8F20E9C58300D36056 /* CandyTheme.swift in Sources */,
+				8305C1E720EBDAE0004D0F3E /* GridViewCell.swift in Sources */,
+				8305C1F220EBDB01004D0F3E /* UIFont.swift in Sources */,
 				8345A33120EB9EAF00F17775 /* MarkerInfoView.swift in Sources */,
+				8305C1FA20EBE052004D0F3E /* ViewController.swift in Sources */,
 				837EAE1A20E9267600837DEE /* CustomCollectionCell.swift in Sources */,
 				83D28E9120E9C58300D36056 /* SearchFooter.swift in Sources */,
 				83D28E9D20EAC7BE00D36056 /* Company.swift in Sources */,
@@ -362,6 +437,7 @@
 				83D28E9020E9C58300D36056 /* Candy.swift in Sources */,
 				837EAE1D20E9268700837DEE /* UIColor+Random.swift in Sources */,
 				837EADFD20E8362800837DEE /* perx2.xcdatamodeld in Sources */,
+				8305C1F320EBDB01004D0F3E /* DepDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

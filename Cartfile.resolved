@@ -1,2 +1,4 @@
+github "AppliKeySolutions/VegaScroll" "1.1"
+github "Ramotion/folding-cell" "3.1.1"
 github "jonkykong/SideMenu" "83f8e461e103d2caacb328c3050fcbb4980cbc83"
 github "yacir/CollectionViewSlantedLayout" "51bacec0fd392aa94e7c5d0dba1e8079a6584e16"

@@ -18,5 +18,10 @@ pod 'AlamofireImage'
 pod 'GoogleMaps'
 pod 'GooglePlaces'
 pod 'SwiftyJSON'
+pod 'GooglePlacePicker'
+pod 'ElongationPreview'
+pod 'Firebase/Database'
+#pod 'VegaScrollFlowLayout'
+pod 'FoldingCell'
 
 end
