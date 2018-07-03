@@ -22,6 +22,11 @@
 		83D28E9120E9C58300D36056 /* SearchFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D28E8C20E9C58200D36056 /* SearchFooter.swift */; };
 		83D28E9220E9C58300D36056 /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D28E8D20E9C58200D36056 /* MasterViewController.swift */; };
 		83D28E9320E9C58300D36056 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D28E8E20E9C58200D36056 /* DetailViewController.swift */; };
+		83D28E9620E9D31100D36056 /* 7-eleven.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D28E9420E9D30E00D36056 /* 7-eleven.png */; };
+		83D28E9720E9D31100D36056 /* walgreens.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 83D28E9520E9D30F00D36056 /* walgreens.jpeg */; };
+		83D28E9920E9D7FB00D36056 /* BrandTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D28E9820E9D7FB00D36056 /* BrandTableViewCell.swift */; };
+		83D28E9D20EAC7BE00D36056 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D28E9C20EAC7BE00D36056 /* Company.swift */; };
+		83D28EA120EACBE500D36056 /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D28EA020EACBE500D36056 /* CompanyTableViewCell.swift */; };
 		83FE1DCE20E93122003597A8 /* covers.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83FE1DCD20E93122003597A8 /* covers.plist */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +52,11 @@
 		83D28E8C20E9C58200D36056 /* SearchFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFooter.swift; sourceTree = "<group>"; };
 		83D28E8D20E9C58200D36056 /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		83D28E8E20E9C58200D36056 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		83D28E9420E9D30E00D36056 /* 7-eleven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "7-eleven.png"; sourceTree = "<group>"; };
+		83D28E9520E9D30F00D36056 /* walgreens.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = walgreens.jpeg; sourceTree = "<group>"; };
+		83D28E9820E9D7FB00D36056 /* BrandTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrandTableViewCell.swift; sourceTree = "<group>"; };
+		83D28E9C20EAC7BE00D36056 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
+		83D28EA020EACBE500D36056 /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableViewCell.swift; sourceTree = "<group>"; };
 		83FE1DCD20E93122003597A8 /* covers.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = covers.plist; path = Controllers/covers.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,6 +104,8 @@
 				837EADF420E8362800837DEE /* AppDelegate.swift */,
 				837EAE2020E92B1900837DEE /* Views */,
 				837EAE1F20E92B0500837DEE /* Controllers */,
+				83D28E9520E9D30F00D36056 /* walgreens.jpeg */,
+				83D28E9420E9D30E00D36056 /* 7-eleven.png */,
 				837EAE1E20E926C800837DEE /* Assets.xcassets */,
 				837EAE2F20E92F8A00837DEE /* Assets.xcassets */,
 				837EAE1C20E9268600837DEE /* UIColor+Random.swift */,
@@ -125,6 +137,9 @@
 			isa = PBXGroup;
 			children = (
 				837EAE1920E9267600837DEE /* CustomCollectionCell.swift */,
+				83D28E9820E9D7FB00D36056 /* BrandTableViewCell.swift */,
+				83D28E9C20EAC7BE00D36056 /* Company.swift */,
+				83D28EA020EACBE500D36056 /* CompanyTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -199,8 +214,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				837EAE2E20E92F6F00837DEE /* LaunchScreen.storyboard in Resources */,
+				83D28E9620E9D31100D36056 /* 7-eleven.png in Resources */,
 				83FE1DCE20E93122003597A8 /* covers.plist in Resources */,
 				837EAE3020E92F8A00837DEE /* Assets.xcassets in Resources */,
+				83D28E9720E9D31100D36056 /* walgreens.jpeg in Resources */,
 				837EADFA20E8362800837DEE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -215,12 +232,16 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-perx2/Pods-perx2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/CollectionViewSlantedLayout/CollectionViewSlantedLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/TTGEmojiRate/TTGEmojiRate.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CollectionViewSlantedLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTGEmojiRate.framework",
@@ -256,12 +277,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				83D28E9320E9C58300D36056 /* DetailViewController.swift in Sources */,
+				83D28E9920E9D7FB00D36056 /* BrandTableViewCell.swift in Sources */,
 				83D28E9220E9C58300D36056 /* MasterViewController.swift in Sources */,
+				83D28EA120EACBE500D36056 /* CompanyTableViewCell.swift in Sources */,
 				837EAE2220E92DED00837DEE /* BrandViewController.swift in Sources */,
 				837EAE1820E9265C00837DEE /* SettingsController.swift in Sources */,
 				83D28E8F20E9C58300D36056 /* CandyTheme.swift in Sources */,
 				837EAE1A20E9267600837DEE /* CustomCollectionCell.swift in Sources */,
 				83D28E9120E9C58300D36056 /* SearchFooter.swift in Sources */,
+				83D28E9D20EAC7BE00D36056 /* Company.swift in Sources */,
 				837EADF520E8362800837DEE /* AppDelegate.swift in Sources */,
 				83D28E9020E9C58300D36056 /* Candy.swift in Sources */,
 				837EAE1D20E9268700837DEE /* UIColor+Random.swift in Sources */,

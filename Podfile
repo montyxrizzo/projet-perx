@@ -13,6 +13,7 @@ target 'perx2' do
 pod 'SideMenu'
 pod 'TTGEmojiRate'
 pod 'CollectionViewSlantedLayout'
-
+pod 'Alamofire', '~> 4.7'
+pod 'AlamofireImage'
 
 end

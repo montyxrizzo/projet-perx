@@ -21,22 +21,53 @@
  */
 
 import UIKit
+import Alamofire
+import AlamofireImage
 
 class MasterViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-  
+  let URL_GET_DATA = "https://simplifiedcoding.net/demos/marvel/"
+
   // MARK: - Properties
   @IBOutlet var tableView: UITableView!
   @IBOutlet var searchFooter: SearchFooter!
-  
   var detailViewController: DetailViewController? = nil
-  var candies = [Candy]()
+  var companies = [Company]()
   var brands = [Brand]()
-  var filteredCandies = [Candy]()
+  var filteredcompanies = [Company]()
+    var filteredCompanies = [Company]()
+
+//  var filteredBrands = [Brands]()
   let searchController = UISearchController(searchResultsController: nil)
   
   // MARK: - View Setup
   override func viewDidLoad() {
     super.viewDidLoad()
+    //fetching data from web api
+    Alamofire.request(URL_GET_DATA).responseJSON { response in
+        
+        //getting json
+        if let json = response.result.value {
+            
+            //converting json to NSArray
+            let companiesArray : NSArray  = json as! NSArray
+            
+            //traversing through all elements of the array
+            for i in 0..<companiesArray.count{
+                
+                //adding hero values to the hero list
+                self.companies.append(Company(
+                    name: (companiesArray[i] as AnyObject).value(forKey: "name") as? String,
+                    category: (companiesArray[i] as AnyObject).value(forKey: "category") as? String,
+                    imageurl: ((companiesArray[i] as AnyObject).value(forKey: "imageurl") as? String)!
+                ))
+                
+            }
+            
+            //displaying data in tableview
+            self.tableView.reloadData()
+        }
+        
+    }
     
     // Setup the Search Controller
     searchController.searchResultsUpdater = self
@@ -52,13 +83,13 @@ class MasterViewController: UIViewController, UITableViewDataSource, UITableView
     // Setup the search footer
     tableView.tableFooterView = searchFooter
     
-    candies = [
-      Candy(category:"Retail", name:"Apple"),
-      Candy(category:"Retail", name:"Walgreens"),
-      Candy(category:"Retail", name:"Sephora"),
-      Candy(category:"Dining", name:"Di Bruno Bros."),
-      Candy(category:"Retail", name:"Target"),
-      Candy(category:"Other", name:"7-Eleven")
+    companies = [
+        Company( name:"Apple",category:"Retail",imageurl:"asdfasd"),
+      Company( name:"Walgreens",category:"Retail",imageurl:"asdfasd"),
+      Company(name:"Sephora",category:"Retail", imageurl:"asdfasd"),
+      Company(name:"Di Bruno Bros.",category:"Dining", imageurl:"asdfasd"),
+      Company( name:"Target",category:"Retail",imageurl:"asdfasd"),
+      Company( name:"7-Eleven",category:"Other",imageurl:"asdfasd")
     ]
     
     
@@ -70,7 +101,7 @@ class MasterViewController: UIViewController, UITableViewDataSource, UITableView
         Brand(category:"Retail", name:"Target",locations: ["1273 Walnut st", "1222 Chestnut St."]),
         Brand(category:"Other", name:"7-Eleven",locations: ["1273 Walnut st", "1222 Chestnut St."])
     ]
-    
+   
     if let splitViewController = splitViewController {
       let controllers = splitViewController.viewControllers
       detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
@@ -97,24 +128,36 @@ class MasterViewController: UIViewController, UITableViewDataSource, UITableView
   
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
     if isFiltering() {
-      searchFooter.setIsFilteringToShow(filteredItemCount: filteredCandies.count, of: candies.count)
-      return filteredCandies.count
+      searchFooter.setIsFilteringToShow(filteredItemCount: filteredCompanies.count, of: companies.count)
+      return filteredCompanies.count
     }
     
     searchFooter.setNotFiltering()
-    return candies.count
+    return companies.count
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
-    let candy: Candy
-    if isFiltering() {
-      candy = filteredCandies[indexPath.row]
-    } else {
-      candy = candies[indexPath.row]
+    let cell = tableView.dequeueReusableCell(withIdentifier: "companycell", for: indexPath) as! CompanyTableViewCell
+    let company: Company
+
+    Alamofire.request("https://httpbin.org/image/png").responseImage { response in
+    
+        
+        if let image = response.result.value {
+              cell.companyImageView.image = image
+          
+            
+        }
     }
-    cell.textLabel!.text = candy.name
-    cell.detailTextLabel!.text = candy.category
+    
+    if isFiltering() {
+      company = filteredCompanies[indexPath.row]
+
+    } else {
+      company=companies[indexPath.row]
+    }
+    cell.textLabel!.text = company.name
+    cell.detailTextLabel!.text = company.category
     return cell
   }
   
@@ -122,14 +165,14 @@ class MasterViewController: UIViewController, UITableViewDataSource, UITableView
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "showDetail" {
       if let indexPath = tableView.indexPathForSelectedRow {
-        let candy: Candy
+        let company: Company
         if isFiltering() {
-          candy = filteredCandies[indexPath.row]
+          company = filteredcompanies[indexPath.row]
         } else {
-          candy = candies[indexPath.row]
+          company = companies[indexPath.row]
         }
         let controller = (segue.destination as! UINavigationController).topViewController as! DetailViewController
-        controller.detailCandy = candy
+        controller.detailCompany = company
         controller.navigationItem.leftBarButtonItem = splitViewController?.displayModeButtonItem
         controller.navigationItem.leftItemsSupplementBackButton = true
       }
@@ -139,13 +182,13 @@ class MasterViewController: UIViewController, UITableViewDataSource, UITableView
   // MARK: - Private instance methods
   
   func filterContentForSearchText(_ searchText: String, scope: String = "All") {
-    filteredCandies = candies.filter({( candy : Candy) -> Bool in
-      let doesCategoryMatch = (scope == "All") || (candy.category == scope)
+    filteredcompanies = companies.filter({( company : Company) -> Bool in
+      let doesCategoryMatch = (scope == "All") || (company.category == scope)
       
       if searchBarIsEmpty() {
         return doesCategoryMatch
       } else {
-        return doesCategoryMatch && candy.name.lowercased().contains(searchText.lowercased())
+        return doesCategoryMatch && company.name!.lowercased().contains(searchText.lowercased())
       }
     })
     tableView.reloadData()

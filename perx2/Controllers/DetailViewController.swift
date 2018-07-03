@@ -25,20 +25,20 @@ import UIKit
 class DetailViewController: UIViewController {
   
   @IBOutlet weak var detailDescriptionLabel: UILabel!
-  @IBOutlet weak var candyImageView: UIImageView!
+  @IBOutlet weak var CompanyImageView: UIImageView!
   
-  var detailCandy: Candy? {
+  var detailCompany: Company? {
     didSet {
       configureView()
     }
   }
   
   func configureView() {
-    if let detailCandy = detailCandy {
-      if let detailDescriptionLabel = detailDescriptionLabel, let candyImageView = candyImageView {
-        detailDescriptionLabel.text = detailCandy.name
-        candyImageView.image = UIImage(named: detailCandy.name)
-        title = detailCandy.category
+    if let detailCompany = detailCompany {
+      if let detailDescriptionLabel = detailDescriptionLabel, let CompanyImageView = CompanyImageView {
+        detailDescriptionLabel.text = detailCompany.name
+        CompanyImageView.image = UIImage(named:detailCompany.name!)
+        title = detailCompany.category
       }
     }
   }

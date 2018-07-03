@@ -1,24 +1,33 @@
 PODS:
+  - Alamofire (4.7.2)
+  - AlamofireImage (3.3.1):
+    - Alamofire (~> 4.5)
   - CollectionViewSlantedLayout (3.0.1)
   - SideMenu (4.0.0)
   - TTGEmojiRate (0.3.0)
 
 DEPENDENCIES:
+  - Alamofire (~> 4.7)
+  - AlamofireImage
   - CollectionViewSlantedLayout
   - SideMenu
   - TTGEmojiRate
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Alamofire
+    - AlamofireImage
     - CollectionViewSlantedLayout
     - SideMenu
     - TTGEmojiRate
 
 SPEC CHECKSUMS:
+  Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
+  AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
   CollectionViewSlantedLayout: 8c8ebc112e3ac1c3318a916aa9c8d9f1901f0dd9
   SideMenu: 70ee5657df63ec3382660ec4ef470bf1cf5db07d
   TTGEmojiRate: 9b295b22e42874acfd717a9ae606e259995b83d0
 
-PODFILE CHECKSUM: 0188449d272e7243b4aa8af98b0e3658367e79ca
+PODFILE CHECKSUM: f8c8f5c68f54d7e3b684d2d60baadbfd9dee67d3
 
 COCOAPODS: 1.5.3
