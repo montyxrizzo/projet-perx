@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:home_slow.gpx">
+   </FileRef>
+   <FileRef
       location = "group:perx2.xcodeproj">
    </FileRef>
    <FileRef

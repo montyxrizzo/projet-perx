@@ -10,14 +10,14 @@ import UIKit
 
 import CollectionViewSlantedLayout
 
-class BrandViewController: UIViewController {
+class PerkViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var collectionViewLayout: CollectionViewSlantedLayout!
 
     internal var covers = [[String:String]]()
 
-    let reuseIdentifier = "brandCustomViewCell"
+    let reuseIdentifier = "perkCustomViewCell"
     
     override func loadView() {
         super.loadView()
@@ -56,7 +56,7 @@ class BrandViewController: UIViewController {
     }
 }
 
-extension BrandViewController: UICollectionViewDataSource {
+extension PerkViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return covers.count
@@ -65,7 +65,7 @@ extension BrandViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView,
         cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
 
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! BrandCustomCollectionCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! PerkCustomCollectionCell
         
         cell.image = UIImage(named: covers[indexPath.row]["picture"]!)!
         cell.name = covers[indexPath.row]["name"]
@@ -78,7 +78,7 @@ extension BrandViewController: UICollectionViewDataSource {
     }
 }
 
-extension BrandViewController: CollectionViewDelegateSlantedLayout {
+extension PerkViewController: CollectionViewDelegateSlantedLayout {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         NSLog("Did select item at indexPath: [\(indexPath.section)][\(indexPath.row)]")
@@ -91,10 +91,10 @@ extension BrandViewController: CollectionViewDelegateSlantedLayout {
     }
 }
 
-extension BrandViewController: UIScrollViewDelegate {
+extension PerkViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         guard let collectionView = self.collectionView else {return}
-        guard let visibleCells = collectionView.visibleCells as? [BrandCustomCollectionCell] else {return}
+        guard let visibleCells = collectionView.visibleCells as? [PerkCustomCollectionCell] else {return}
         for parallaxCell in visibleCells {
             let yOffset = ((collectionView.contentOffset.y - parallaxCell.frame.origin.y) / parallaxCell.imageHeight) * yOffsetSpeed
             let xOffset = ((collectionView.contentOffset.x - parallaxCell.frame.origin.x) / parallaxCell.imageWidth) * xOffsetSpeed

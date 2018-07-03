@@ -15,11 +15,11 @@ import CollectionViewSlantedLayout
 let yOffsetSpeed: CGFloat = 150.0
 let xOffsetSpeed: CGFloat = 100.0
 
-class BrandCustomCollectionCell: CollectionViewSlantedCell {
+class PerkCustomCollectionCell: CollectionViewSlantedCell {
     
     @IBOutlet weak var imageView: UIImageView!
-    @IBOutlet weak var BrandNameLabel: UILabel!
-//    @IBOutlet weak var BrandAddressLabel: UILabel!
+    @IBOutlet weak var PerkNameLabel: UILabel!
+//    @IBOutlet weak var PerkAddressLabel: UILabel!
     @IBOutlet weak var SideMenuButton: UIButton!
 
     private var gradient = CAGradientLayer()
@@ -49,14 +49,14 @@ class BrandCustomCollectionCell: CollectionViewSlantedCell {
     }
 var name: String?   {
     didSet {
-        BrandNameLabel.text = name
+        PerkNameLabel.text = name
         
     }
     
 }
 //var address: String? {
 //    didSet {
-//        BrandAddressLabel.text = address
+//        PerkAddressLabel.text = address
 //    }
 //}
     

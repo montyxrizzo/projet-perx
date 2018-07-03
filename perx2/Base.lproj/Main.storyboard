@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5IM-bd-Zjd">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rjq-fB-vDO">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -31,7 +31,7 @@
         <!--Sample-->
         <scene sceneID="wFt-Rr-Nyk">
             <objects>
-                <viewController id="qco-dI-j4r" customClass="BrandViewController" customModule="perx2" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="qco-dI-j4r" customClass="PerkViewController" customModule="perx2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="BAe-n3-5RQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -41,7 +41,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <collectionViewLayout key="collectionViewLayout" id="Dqh-k7-0BF" customClass="CollectionViewSlantedLayout" customModule="CollectionViewSlantedLayout"/>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="brandCustomViewCell" reuseIdentifier="brandCustomViewCell" id="Nyg-md-SZa" customClass="BrandCustomCollectionCell" customModule="perx2" customModuleProvider="target">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="perkCustomViewCell" reuseIdentifier="perkCustomViewCell" id="Nyg-md-SZa" userLabel="perkCustomViewCell" customClass="PerkCustomCollectionCell" customModule="perx2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="275"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
@@ -56,11 +56,22 @@
                                                             <rect key="frame" x="-1" y="0.0" width="375" height="275"/>
                                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         </imageView>
-                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2f-OQ-sij">
-                                                            <rect key="frame" x="51" y="97" width="272" height="137"/>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w2f-OQ-sij" customClass="PerkNameLabel" customModule="perx2" customModuleProvider="target">
+                                                            <rect key="frame" x="8" y="27" width="274" height="112"/>
                                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                             <attributedString key="attributedText">
-                                                                <fragment content="StoreName">
+                                                                <fragment content="Perk">
+                                                                    <attributes>
+                                                                        <color key="NSColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                                        <font key="NSFont" size="48" name="ArialRoundedMTBold"/>
+                                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                                        <shadow key="NSShadow" blurRadius="8.9938038793103452">
+                                                                            <size key="offset" width="3.6739403974420594e-16" height="6"/>
+                                                                            <color key="color" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                                        </shadow>
+                                                                    </attributes>
+                                                                </fragment>
+                                                                <fragment content="Name">
                                                                     <attributes>
                                                                         <color key="NSColor" red="0.0" green="0.98106676339999999" blue="0.57369142770000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                                         <font key="NSFont" size="48" name="ArialRoundedMTBold"/>
@@ -82,7 +93,7 @@
                                         </view>
                                         <size key="customSize" width="375" height="275"/>
                                         <connections>
-                                            <outlet property="BrandNameLabel" destination="w2f-OQ-sij" id="LoQ-Rt-cFp"/>
+                                            <outlet property="PerkNameLabel" destination="w2f-OQ-sij" id="weP-au-GHB"/>
                                             <outlet property="backgroundView" destination="k0o-Nv-BLt" id="2t9-mv-sX5"/>
                                             <outlet property="imageView" destination="Pl4-Cr-EEd" id="7x8-Uf-hZw"/>
                                         </connections>
@@ -131,7 +142,7 @@
                     </connections>
                 </searchDisplayController>
             </objects>
-            <point key="canvasLocation" x="-2154" y="99"/>
+            <point key="canvasLocation" x="-2154.4000000000001" y="98.50074962518741"/>
         </scene>
         <!--Settings Controller-->
         <scene sceneID="Gf3-5Z-moR">
@@ -508,7 +519,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2nG-qk-czs" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-2338.4000000000001" y="-710.19490254872574"/>
+            <point key="canvasLocation" x="-1923" y="-1268"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Bnx-NO-oA8">
@@ -533,7 +544,7 @@
         <!--Map View Controller-->
         <scene sceneID="BTz-tU-pwU">
             <objects>
-                <viewController id="uYb-oh-PDL" customClass="MapViewController" customModule="Feed_Me" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="uYb-oh-PDL" customClass="MapViewController" customModule="perx2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yHK-xe-9LZ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -594,7 +605,7 @@
         <!--Choose Types-->
         <scene sceneID="tqR-Fz-4yH">
             <objects>
-                <tableViewController id="cIe-l7-UcS" customClass="TypesTableViewController" customModule="Feed_Me" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="cIe-l7-UcS" customClass="TypesTableViewController" customModule="perx2" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="YZP-DM-w0j">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -926,6 +937,6 @@ AAAAAAACAQAAAAAAAABZAAAAAAAAAAAAAAAAAAA4BQ
     </resources>
     <inferredMetricsTieBreakers>
         <segue reference="3Z2-ws-EgU"/>
-        <segue reference="3g4-y8-bkc"/>
+        <segue reference="YaX-3Q-ZNa"/>
     </inferredMetricsTieBreakers>
 </document>

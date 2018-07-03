@@ -1,5 +1,5 @@
 //
-//  BrandTableViewCell.swift
+//  PerkTableViewCell.swift
 //  perx2
 //
 //  Created by Montreaux Rodgers on 7/1/18.
@@ -8,8 +8,8 @@
 
 import UIKit
 
-class BrandTableViewCell: UITableViewCell {
-    @IBOutlet weak var brandphoto: UIImageView?
+class PerkTableViewCell: UITableViewCell {
+    @IBOutlet weak var perkphoto: UIImageView?
 
     override func awakeFromNib() {
         super.awakeFromNib()
