@@ -19,16 +19,17 @@ class PerkCustomCollectionCell: CollectionViewSlantedCell {
     
     @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var PerkNameLabel: UILabel!
-//    @IBOutlet weak var PerkAddressLabel: UILabel!
+    @IBOutlet weak var PerkAddressLabel: UILabel!
     @IBOutlet weak var SideMenuButton: UIButton!
 
+    @IBOutlet weak var PerkDescriptionLabel: UILabel!
     private var gradient = CAGradientLayer()
     
     override func awakeFromNib() {
         super.awakeFromNib()
         
         if let backgroundView = backgroundView {
-            gradient.colors = [UIColor.clear.cgColor, UIColor.black.cgColor]
+            gradient.colors = [UIColor.clear.cgColor, UIColor.white.cgColor]
             gradient.locations = [0.0, 1.0]
             gradient.frame = backgroundView.bounds
             backgroundView.layer.addSublayer(gradient)
@@ -54,11 +55,17 @@ var name: String?   {
     }
     
 }
-//var address: String? {
-//    didSet {
-//        PerkAddressLabel.text = address
-//    }
-//}
+    
+    var perk: String? {
+        didSet{
+            PerkDescriptionLabel.text = perk
+        }
+    }
+var address: String? {
+    didSet {
+        PerkAddressLabel.text = address
+    }
+}
     
     var imageHeight: CGFloat {
         return (imageView?.image?.size.height) ?? 0.0

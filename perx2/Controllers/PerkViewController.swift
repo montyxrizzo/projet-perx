@@ -69,9 +69,17 @@ extension PerkViewController: UICollectionViewDataSource {
         
         cell.image = UIImage(named: covers[indexPath.row]["picture"]!)!
         cell.name = covers[indexPath.row]["name"]
+        cell.perk = covers[indexPath.row]["perk"]
+         cell.address = covers[indexPath.row]["address"]
+
 
         if let layout = collectionView.collectionViewLayout as? CollectionViewSlantedLayout {
             cell.contentView.transform = CGAffineTransform(rotationAngle: layout.slantingAngle)
+            cell.PerkNameLabel.transform = CGAffineTransform(rotationAngle: layout.slantingAngle)
+            cell.PerkAddressLabel.transform = CGAffineTransform(rotationAngle: layout.slantingAngle)
+            cell.PerkDescriptionLabel.transform = CGAffineTransform(rotationAngle: layout.slantingAngle)
+
+
         }
         
         return cell

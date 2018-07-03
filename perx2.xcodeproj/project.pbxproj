@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		66E945859A2E5A4575724D4D /* Pods_perx2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D194AFED45D90DBA7C55FD /* Pods_perx2.framework */; };
+		8305C1DC20EBCD36004D0F3E /* home_slow copy.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 8305C1DB20EBCD35004D0F3E /* home_slow copy.gpx */; };
 		8345A32E20EB9EAF00F17775 /* MarkerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8345A32A20EB9EAE00F17775 /* MarkerInfoView.xib */; };
 		8345A32F20EB9EAF00F17775 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345A32B20EB9EAE00F17775 /* UIViewExtension.swift */; };
 		8345A33020EB9EAF00F17775 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8345A32C20EB9EAF00F17775 /* Images.xcassets */; };
@@ -43,6 +44,7 @@
 		65D194AFED45D90DBA7C55FD /* Pods_perx2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_perx2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		796F8DB3433D122EBE890DE7 /* Pods-perx2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-perx2.release.xcconfig"; path = "Pods/Target Support Files/Pods-perx2/Pods-perx2.release.xcconfig"; sourceTree = "<group>"; };
 		7ECCC5EB20EAF1BB3F8EA19B /* Pods-perx2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-perx2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-perx2/Pods-perx2.debug.xcconfig"; sourceTree = "<group>"; };
+		8305C1DB20EBCD35004D0F3E /* home_slow copy.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = "home_slow copy.gpx"; sourceTree = "<group>"; };
 		8345A32A20EB9EAE00F17775 /* MarkerInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkerInfoView.xib; sourceTree = "<group>"; };
 		8345A32B20EB9EAE00F17775 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		8345A32C20EB9EAF00F17775 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -112,6 +114,7 @@
 		837EADE820E8362700837DEE = {
 			isa = PBXGroup;
 			children = (
+				8305C1DB20EBCD35004D0F3E /* home_slow copy.gpx */,
 				837EADF320E8362800837DEE /* perx2 */,
 				837EADF220E8362800837DEE /* Products */,
 				D843CD11234321B342F08BFF /* Pods */,
@@ -258,6 +261,7 @@
 				8345A32E20EB9EAF00F17775 /* MarkerInfoView.xib in Resources */,
 				83D28E9720E9D31100D36056 /* walgreens.jpeg in Resources */,
 				837EADFA20E8362800837DEE /* Main.storyboard in Resources */,
+				8305C1DC20EBCD36004D0F3E /* home_slow copy.gpx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,8 @@
 		<string>Apple</string>
 		<key>address</key>
 		<string>1900 Walnut St</string>
+		<key>perk</key>
+		<string>10% off select iPhone cases</string>
 		<key>picture</key>
 		<string>1</string>
 	</dict>
@@ -15,6 +17,8 @@
 		<string>Sephora</string>
 		<key>address</key>
 		<string>289 Chesnut St.</string>
+		<key>perk</key>
+		<string>20% off all beauty items</string>
 		<key>picture</key>
 		<string>2</string>
 	</dict>
@@ -23,6 +27,8 @@
 		<string>Starbucks</string>
 		<key>address</key>
 		<string>2020 Market St</string>
+		<key>perk</key>
+		<string>1 free Mochachino</string>
 		<key>picture</key>
 		<string>3</string>
 	</dict>
@@ -31,6 +37,8 @@
 		<string>WholeFoods</string>
 		<key>address</key>
 		<string>Red Hot Chili Peppers</string>
+		<key>perk</key>
+		<string></string>
 		<key>picture</key>
 		<string>4</string>
 	</dict>

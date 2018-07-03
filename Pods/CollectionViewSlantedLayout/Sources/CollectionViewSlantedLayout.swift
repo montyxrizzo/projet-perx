@@ -38,7 +38,7 @@ import UIKit;
      
      The default value of this property is `75`.
      */
-    @IBInspectable open var slantingSize: UInt = 75 {
+    @IBInspectable open var slantingSize: UInt = 65 {
         didSet {
             updateRotationAngle()
             invalidateLayout()
