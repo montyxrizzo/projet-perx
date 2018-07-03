@@ -8,7 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		66E945859A2E5A4575724D4D /* Pods_perx2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65D194AFED45D90DBA7C55FD /* Pods_perx2.framework */; };
-		8345A32920EB8BC500F17775 /* Model in Resources */ = {isa = PBXBuildFile; fileRef = 8345A32820EB8BC500F17775 /* Model */; };
+		8345A32E20EB9EAF00F17775 /* MarkerInfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8345A32A20EB9EAE00F17775 /* MarkerInfoView.xib */; };
+		8345A32F20EB9EAF00F17775 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345A32B20EB9EAE00F17775 /* UIViewExtension.swift */; };
+		8345A33020EB9EAF00F17775 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8345A32C20EB9EAF00F17775 /* Images.xcassets */; };
+		8345A33120EB9EAF00F17775 /* MarkerInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345A32D20EB9EAF00F17775 /* MarkerInfoView.swift */; };
+		8345A33420EBA71300F17775 /* TypesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345A33220EBA71200F17775 /* TypesTableViewController.swift */; };
+		8345A33520EBA71300F17775 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345A33320EBA71300F17775 /* MapViewController.swift */; };
+		8345A33A20EBA7F600F17775 /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345A33720EBA7F400F17775 /* PlaceMarker.swift */; };
+		8345A33B20EBA7F600F17775 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345A33820EBA7F500F17775 /* GooglePlace.swift */; };
+		8345A33C20EBA7F600F17775 /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345A33920EBA7F500F17775 /* GoogleDataProvider.swift */; };
 		837EADF520E8362800837DEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EADF420E8362800837DEE /* AppDelegate.swift */; };
 		837EADFA20E8362800837DEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837EADF820E8362800837DEE /* Main.storyboard */; };
 		837EADFD20E8362800837DEE /* perx2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 837EADFB20E8362800837DEE /* perx2.xcdatamodeld */; };
@@ -35,7 +43,15 @@
 		65D194AFED45D90DBA7C55FD /* Pods_perx2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_perx2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		796F8DB3433D122EBE890DE7 /* Pods-perx2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-perx2.release.xcconfig"; path = "Pods/Target Support Files/Pods-perx2/Pods-perx2.release.xcconfig"; sourceTree = "<group>"; };
 		7ECCC5EB20EAF1BB3F8EA19B /* Pods-perx2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-perx2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-perx2/Pods-perx2.debug.xcconfig"; sourceTree = "<group>"; };
-		8345A32820EB8BC500F17775 /* Model */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Model; sourceTree = "<group>"; };
+		8345A32A20EB9EAE00F17775 /* MarkerInfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MarkerInfoView.xib; sourceTree = "<group>"; };
+		8345A32B20EB9EAE00F17775 /* UIViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		8345A32C20EB9EAF00F17775 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		8345A32D20EB9EAF00F17775 /* MarkerInfoView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarkerInfoView.swift; sourceTree = "<group>"; };
+		8345A33220EBA71200F17775 /* TypesTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TypesTableViewController.swift; sourceTree = "<group>"; };
+		8345A33320EBA71300F17775 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		8345A33720EBA7F400F17775 /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
+		8345A33820EBA7F500F17775 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
+		8345A33920EBA7F500F17775 /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
 		837EADF120E8362800837DEE /* perx2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = perx2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		837EADF420E8362800837DEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		837EADF920E8362800837DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -82,6 +98,17 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8345A33620EBA7DD00F17775 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8345A33920EBA7F500F17775 /* GoogleDataProvider.swift */,
+				8345A33820EBA7F500F17775 /* GooglePlace.swift */,
+				8345A33720EBA7F400F17775 /* PlaceMarker.swift */,
+			);
+			name = Models;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		837EADE820E8362700837DEE = {
 			isa = PBXGroup;
 			children = (
@@ -103,8 +130,8 @@
 		837EADF320E8362800837DEE /* perx2 */ = {
 			isa = PBXGroup;
 			children = (
+				8345A33620EBA7DD00F17775 /* Models */,
 				837EADF420E8362800837DEE /* AppDelegate.swift */,
-				8345A32820EB8BC500F17775 /* Model */,
 				837EAE2020E92B1900837DEE /* Views */,
 				837EAE1F20E92B0500837DEE /* Controllers */,
 				83D28E9520E9D30F00D36056 /* walgreens.jpeg */,
@@ -115,6 +142,7 @@
 				837EADF820E8362800837DEE /* Main.storyboard */,
 				837EAE0020E8362A00837DEE /* LaunchScreen.storyboard */,
 				837EAE2C20E92F6100837DEE /* LaunchScreen.storyboard */,
+				8345A32A20EB9EAE00F17775 /* MarkerInfoView.xib */,
 				83FE1DCD20E93122003597A8 /* covers.plist */,
 				837EAE0320E8362A00837DEE /* Info.plist */,
 				837EADFB20E8362800837DEE /* perx2.xcdatamodeld */,
@@ -125,6 +153,8 @@
 		837EAE1F20E92B0500837DEE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				8345A33320EBA71300F17775 /* MapViewController.swift */,
+				8345A33220EBA71200F17775 /* TypesTableViewController.swift */,
 				837EAE1720E9265C00837DEE /* SettingsController.swift */,
 				83D28E8B20E9C58100D36056 /* Candy.swift */,
 				83D28E8A20E9C58100D36056 /* CandyTheme.swift */,
@@ -142,6 +172,9 @@
 				837EAE1920E9267600837DEE /* CustomCollectionCell.swift */,
 				83D28E9820E9D7FB00D36056 /* BrandTableViewCell.swift */,
 				83D28E9C20EAC7BE00D36056 /* Company.swift */,
+				8345A32C20EB9EAF00F17775 /* Images.xcassets */,
+				8345A32D20EB9EAF00F17775 /* MarkerInfoView.swift */,
+				8345A32B20EB9EAE00F17775 /* UIViewExtension.swift */,
 				83D28EA020EACBE500D36056 /* CompanyTableViewCell.swift */,
 			);
 			path = Views;
@@ -217,11 +250,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8345A33020EB9EAF00F17775 /* Images.xcassets in Resources */,
 				837EAE2E20E92F6F00837DEE /* LaunchScreen.storyboard in Resources */,
 				83D28E9620E9D31100D36056 /* 7-eleven.png in Resources */,
 				83FE1DCE20E93122003597A8 /* covers.plist in Resources */,
 				837EAE3020E92F8A00837DEE /* Assets.xcassets in Resources */,
-				8345A32920EB8BC500F17775 /* Model in Resources */,
+				8345A32E20EB9EAF00F17775 /* MarkerInfoView.xib in Resources */,
 				83D28E9720E9D31100D36056 /* walgreens.jpeg in Resources */,
 				837EADFA20E8362800837DEE /* Main.storyboard in Resources */,
 			);
@@ -241,6 +275,7 @@
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/CollectionViewSlantedLayout/CollectionViewSlantedLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/TTGEmojiRate/TTGEmojiRate.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -249,6 +284,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CollectionViewSlantedLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTGEmojiRate.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -301,16 +337,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8345A32F20EB9EAF00F17775 /* UIViewExtension.swift in Sources */,
+				8345A33C20EBA7F600F17775 /* GoogleDataProvider.swift in Sources */,
+				8345A33420EBA71300F17775 /* TypesTableViewController.swift in Sources */,
+				8345A33B20EBA7F600F17775 /* GooglePlace.swift in Sources */,
 				83D28E9320E9C58300D36056 /* DetailViewController.swift in Sources */,
 				83D28E9920E9D7FB00D36056 /* BrandTableViewCell.swift in Sources */,
 				83D28E9220E9C58300D36056 /* MasterViewController.swift in Sources */,
 				83D28EA120EACBE500D36056 /* CompanyTableViewCell.swift in Sources */,
 				837EAE2220E92DED00837DEE /* BrandViewController.swift in Sources */,
+				8345A33A20EBA7F600F17775 /* PlaceMarker.swift in Sources */,
 				837EAE1820E9265C00837DEE /* SettingsController.swift in Sources */,
 				83D28E8F20E9C58300D36056 /* CandyTheme.swift in Sources */,
+				8345A33120EB9EAF00F17775 /* MarkerInfoView.swift in Sources */,
 				837EAE1A20E9267600837DEE /* CustomCollectionCell.swift in Sources */,
 				83D28E9120E9C58300D36056 /* SearchFooter.swift in Sources */,
 				83D28E9D20EAC7BE00D36056 /* Company.swift in Sources */,
+				8345A33520EBA71300F17775 /* MapViewController.swift in Sources */,
 				837EADF520E8362800837DEE /* AppDelegate.swift in Sources */,
 				83D28E9020E9C58300D36056 /* Candy.swift in Sources */,
 				837EAE1D20E9268700837DEE /* UIColor+Random.swift in Sources */,

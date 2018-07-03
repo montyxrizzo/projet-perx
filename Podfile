@@ -17,5 +17,6 @@ pod 'Alamofire', '~> 4.7'
 pod 'AlamofireImage'
 pod 'GoogleMaps'
 pod 'GooglePlaces'
+pod 'SwiftyJSON'
 
 end

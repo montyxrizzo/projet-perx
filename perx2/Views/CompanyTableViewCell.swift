@@ -11,6 +11,9 @@ import UIKit
 class CompanyTableViewCell: UITableViewCell {
     @IBOutlet weak var companyImageView: UIImageView!
 
+    @IBOutlet weak var labelName: UILabel!
+    
+//    @IBOutlet weak var labelCategory: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
