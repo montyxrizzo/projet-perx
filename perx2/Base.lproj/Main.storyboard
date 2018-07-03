@@ -400,7 +400,7 @@
         <!--Master-->
         <scene sceneID="Zu4-2D-Yo7">
             <objects>
-                <viewController title="Master" id="e5O-MN-dbL" customClass="MasterViewController" customModule="CandySearch" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Master" id="e5O-MN-dbL" customClass="MasterViewController" customModule="perx2" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Z03-fk-yYn"/>
                         <viewControllerLayoutGuide type="bottom" id="oxc-w3-bd3"/>
@@ -448,7 +448,7 @@
                                     <outlet property="prefetchDataSource" destination="e5O-MN-dbL" id="WKv-0d-Bqb"/>
                                 </connections>
                             </tableView>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TR5-4L-cUH" customClass="SearchFooter" customModule="CandySearch" customModuleProvider="target">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TR5-4L-cUH" customClass="SearchFooter" customModule="perx2" customModuleProvider="target">
                                 <rect key="frame" x="0.0" y="623" width="375" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -791,7 +791,7 @@ AAAAAAACAQAAAAAAAABZAAAAAAAAAAAAAAAAAAA4BQ
         </image>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="p2U-Mg-e0I"/>
+        <segue reference="3Z2-ws-EgU"/>
         <segue reference="3g4-y8-bkc"/>
     </inferredMetricsTieBreakers>
 </document>

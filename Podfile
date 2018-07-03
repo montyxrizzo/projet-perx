@@ -15,5 +15,7 @@ pod 'TTGEmojiRate'
 pod 'CollectionViewSlantedLayout'
 pod 'Alamofire', '~> 4.7'
 pod 'AlamofireImage'
+pod 'GoogleMaps'
+pod 'GooglePlaces'
 
 end

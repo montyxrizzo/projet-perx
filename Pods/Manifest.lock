@@ -3,6 +3,13 @@ PODS:
   - AlamofireImage (3.3.1):
     - Alamofire (~> 4.5)
   - CollectionViewSlantedLayout (3.0.1)
+  - GoogleMaps (2.7.0):
+    - GoogleMaps/Maps (= 2.7.0)
+  - GoogleMaps/Base (2.7.0)
+  - GoogleMaps/Maps (2.7.0):
+    - GoogleMaps/Base
+  - GooglePlaces (2.7.0):
+    - GoogleMaps/Base (= 2.7.0)
   - SideMenu (4.0.0)
   - TTGEmojiRate (0.3.0)
 
@@ -10,6 +17,8 @@ DEPENDENCIES:
   - Alamofire (~> 4.7)
   - AlamofireImage
   - CollectionViewSlantedLayout
+  - GoogleMaps
+  - GooglePlaces
   - SideMenu
   - TTGEmojiRate
 
@@ -18,6 +27,8 @@ SPEC REPOS:
     - Alamofire
     - AlamofireImage
     - CollectionViewSlantedLayout
+    - GoogleMaps
+    - GooglePlaces
     - SideMenu
     - TTGEmojiRate
 
@@ -25,9 +36,11 @@ SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
   CollectionViewSlantedLayout: 8c8ebc112e3ac1c3318a916aa9c8d9f1901f0dd9
+  GoogleMaps: f79af95cb24d869457b1f961c93d3ce8b2f3b848
+  GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
   SideMenu: 70ee5657df63ec3382660ec4ef470bf1cf5db07d
   TTGEmojiRate: 9b295b22e42874acfd717a9ae606e259995b83d0
 
-PODFILE CHECKSUM: f8c8f5c68f54d7e3b684d2d60baadbfd9dee67d3
+PODFILE CHECKSUM: d880f028332d7c99ab034341442e4a19c878f9c0
 
 COCOAPODS: 1.5.3
