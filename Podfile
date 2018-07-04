@@ -23,5 +23,6 @@ pod 'ElongationPreview'
 pod 'Firebase/Database'
 #pod 'VegaScrollFlowLayout'
 pod 'FoldingCell'
+pod 'UICircularProgressRing'
 
 end

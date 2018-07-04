@@ -1,0 +1,18 @@
+{
+  "Mac" : [
+
+  ],
+  "watchOS" : [
+
+  ],
+  "tvOS" : [
+
+  ],
+  "commitish" : "v3.0.0",
+  "iOS" : [
+    {
+      "name" : "UICircularProgressRing",
+      "hash" : "b0f5f47115440a765e63b878038a16b4beb9a1e4f244dfd2ec99472c70243cdc"
+    }
+  ]
+}
