@@ -30,6 +30,8 @@
 		8345A33A20EBA7F600F17775 /* PlaceMarker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345A33720EBA7F400F17775 /* PlaceMarker.swift */; };
 		8345A33B20EBA7F600F17775 /* GooglePlace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345A33820EBA7F500F17775 /* GooglePlace.swift */; };
 		8345A33C20EBA7F600F17775 /* GoogleDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8345A33920EBA7F500F17775 /* GoogleDataProvider.swift */; };
+		837668CD20ED242E00842740 /* ProgressMeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837668CB20ED242E00842740 /* ProgressMeterViewController.swift */; };
+		837668CE20ED242E00842740 /* ProgressMeterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 837668CC20ED242E00842740 /* ProgressMeterViewController.xib */; };
 		837EADF520E8362800837DEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EADF420E8362800837DEE /* AppDelegate.swift */; };
 		837EADFA20E8362800837DEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837EADF820E8362800837DEE /* Main.storyboard */; };
 		837EADFD20E8362800837DEE /* perx2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 837EADFB20E8362800837DEE /* perx2.xcdatamodeld */; };
@@ -102,6 +104,8 @@
 		8345A33720EBA7F400F17775 /* PlaceMarker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceMarker.swift; sourceTree = "<group>"; };
 		8345A33820EBA7F500F17775 /* GooglePlace.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GooglePlace.swift; sourceTree = "<group>"; };
 		8345A33920EBA7F500F17775 /* GoogleDataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleDataProvider.swift; sourceTree = "<group>"; };
+		837668CB20ED242E00842740 /* ProgressMeterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressMeterViewController.swift; sourceTree = "<group>"; };
+		837668CC20ED242E00842740 /* ProgressMeterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressMeterViewController.xib; sourceTree = "<group>"; };
 		837EADF120E8362800837DEE /* perx2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = perx2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		837EADF420E8362800837DEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		837EADF920E8362800837DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -198,7 +202,6 @@
 				83BC1FAB20EBF79A00565E7E /* Assets.xcassets */,
 				83BC1FAA20EBF79A00565E7E /* DemoCell.swift */,
 				83BC1FA820EBF79000565E7E /* Fonts */,
-				83BC1FA920EBF79800565E7E /* MainTableViewController.swift */,
 				8345A33620EBA7DD00F17775 /* Models */,
 				837EADF420E8362800837DEE /* AppDelegate.swift */,
 				837EAE2020E92B1900837DEE /* Views */,
@@ -223,6 +226,7 @@
 		837EAE1F20E92B0500837DEE /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				83BC1FA920EBF79800565E7E /* MainTableViewController.swift */,
 				83D0E91820EC5DE100777D7E /* saturn.png */,
 				8345A33320EBA71300F17775 /* MapViewController.swift */,
 				83D6A97520EC594000BCD8EF /* MainViewController.swift */,
@@ -247,6 +251,8 @@
 				83D28E8C20E9C58200D36056 /* SearchFooter.swift */,
 				837EAE2120E92B7300837DEE /* PerkViewController.swift */,
 				83BC1FB120EC389500565E7E /* UICircularProgressRingViewController.swift */,
+				837668CB20ED242E00842740 /* ProgressMeterViewController.swift */,
+				837668CC20ED242E00842740 /* ProgressMeterViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -340,6 +346,7 @@
 				83BC1FAC20EBF79B00565E7E /* Fonts in Resources */,
 				8345A33020EB9EAF00F17775 /* Images.xcassets in Resources */,
 				8305C1F120EBDB01004D0F3E /* Roboto-Bold.ttf in Resources */,
+				837668CE20ED242E00842740 /* ProgressMeterViewController.xib in Resources */,
 				837EAE2E20E92F6F00837DEE /* LaunchScreen.storyboard in Resources */,
 				83D28E9620E9D31100D36056 /* 7-eleven.png in Resources */,
 				8305C1F620EBDB14004D0F3E /* Assets.xcassets in Resources */,
@@ -374,6 +381,7 @@
 				"${BUILT_PRODUCTS_DIR}/ElongationPreview/ElongationPreview.framework",
 				"${BUILT_PRODUCTS_DIR}/FoldingCell/FoldingCell.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/ProgressMeter/ProgressMeter.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 				"${BUILT_PRODUCTS_DIR}/TTGEmojiRate/TTGEmojiRate.framework",
@@ -388,6 +396,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ElongationPreview.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FoldingCell.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressMeter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TTGEmojiRate.framework",
@@ -472,6 +481,7 @@
 				8305C1FA20EBE052004D0F3E /* ViewController.swift in Sources */,
 				837EAE1A20E9267600837DEE /* CustomCollectionCell.swift in Sources */,
 				83D28E9120E9C58300D36056 /* SearchFooter.swift in Sources */,
+				837668CD20ED242E00842740 /* ProgressMeterViewController.swift in Sources */,
 				83BC1FB220EC389600565E7E /* UICircularProgressRingViewController.swift in Sources */,
 				83D28E9D20EAC7BE00D36056 /* Company.swift in Sources */,
 				8345A33520EBA71300F17775 /* MapViewController.swift in Sources */,
