@@ -9,7 +9,7 @@
 import UIKit
 
 class CompanyTableViewCell: UITableViewCell {
-//    @IBOutlet weak var companyImageView: UIImageView!
+    @IBOutlet weak var companyImageView: UIImageView!
 
     @IBOutlet weak var labelName: UILabel!
     

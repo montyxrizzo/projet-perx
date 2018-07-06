@@ -2078,6 +2078,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="215.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="BP2-yT-yfh">
+                                                    <rect key="frame" x="0.0" y="11" width="375" height="205"/>
+                                                </imageView>
                                                 <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Nga-30-rN4">
                                                     <rect key="frame" x="15" y="88" width="33.5" height="20.5"/>
                                                     <autoresizingMask key="autoresizingMask"/>
@@ -2093,8 +2096,16 @@
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="BP2-yT-yfh" firstAttribute="leading" secondItem="uO1-se-Zg5" secondAttribute="leading" id="PYx-rx-TlB"/>
+                                                <constraint firstItem="BP2-yT-yfh" firstAttribute="top" secondItem="uO1-se-Zg5" secondAttribute="topMargin" id="Up5-gV-Swm"/>
+                                                <constraint firstAttribute="trailing" secondItem="BP2-yT-yfh" secondAttribute="trailing" id="Xcz-ej-eXf"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="BP2-yT-yfh" secondAttribute="bottom" constant="-11" id="atZ-6T-n2K"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
+                                            <outlet property="companyImageView" destination="BP2-yT-yfh" id="tgv-Ia-4Dj"/>
+                                            <outlet property="labelName" destination="Nga-30-rN4" id="oM0-tp-dzb"/>
                                             <segue destination="kJN-nm-wl3" kind="showDetail" identifier="showDetail" id="ggI-T9-i0y"/>
                                         </connections>
                                     </tableViewCell>
@@ -2147,7 +2158,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PyO-gI-hA7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-15972.5" y="617.5"/>
+            <point key="canvasLocation" x="-15973.6" y="616.64167916041981"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="Jgm-Gz-5NR">

@@ -33,6 +33,10 @@ class MasterViewController: UIViewController, UITableViewDataSource, UITableView
   var filteredCompanies = [Company]()
   let searchController = UISearchController(searchResultsController: nil)
   
+    
+    
+    
+    
   // MARK: - View Setup
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -52,12 +56,12 @@ class MasterViewController: UIViewController, UITableViewDataSource, UITableView
     tableView.tableFooterView = searchFooter
     
     companies = [
-        Company( name:"Apple",category:"Retail"),
-        Company( name:"Walgreens",category:"Retail"),
-        Company(name:"Sephora",category:"Retail"),
-        Company(name:"Di Bruno Bros.",category:"Dining"),
-        Company( name:"Target",category:"Retail"),
-        Company( name:"7-Eleven",category:"Other")
+        Company( name:"Apple",category:"Retail", imageurl:"abc"),
+        Company( name:"Walgreens",category:"Retail",imageurl: "asd"),
+        Company(name:"Sephora",category:"Retail",imageurl: "asd"),
+        Company(name:"Di Bruno Bros.",category:"Dining",imageurl:"asd"),
+        Company( name:"Target",category:"Retail",imageurl:"asd"),
+        Company( name:"7-Eleven",category:"Other",imageurl:"asd")
     ]
     
 
@@ -106,9 +110,9 @@ class MasterViewController: UIViewController, UITableViewDataSource, UITableView
     }
     cell.textLabel!.text = company.name
     cell.detailTextLabel!.text = company.category
+    cell.imageView?.image = UIImage(named: company.name!)
     return cell
-  }
-  
+    }
   // MARK: - Segues
   override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
     if segue.identifier == "showDetail" {
