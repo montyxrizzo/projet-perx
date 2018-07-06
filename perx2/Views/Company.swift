@@ -11,11 +11,13 @@ class Company
 {
     var name: String?
     var category: String?
-    var imageurl:String?
-    init(name: String?, category: String?,imageurl: String){
+//    var imageurl:String?
+    init(name: String?, category: String?
+//        ,imageurl: String
+        ){
         self.name=name
         self.category=category
-        self.imageurl=imageurl
+//        self.imageurl=imageurl
     }
     
 }

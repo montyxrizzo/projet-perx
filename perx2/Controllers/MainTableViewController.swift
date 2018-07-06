@@ -18,13 +18,22 @@ class MainTableViewController: UITableViewController {
         static let openCellHeight: CGFloat = 488
         static let rowsCount = 10
     }
+    internal var covers = [[String:String]]()
     
+    let reuseIdentifier = "foldingCell"
     var cellHeights: [CGFloat] = []
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let url = Bundle.main.url(forResource: "covers", withExtension: "plist") {
+            covers = (NSArray(contentsOf: url) as! [[String:String]])
+        }
         setup()
     }
+    
+    
+
 
     private func setup() {
         cellHeights = Array(repeating: Const.closeCellHeight, count: Const.rowsCount)
@@ -48,8 +57,28 @@ class MainTableViewController: UITableViewController {
     }
 }
 
-// MARK: - TableView
 
+// MARK: - TableView
+extension MainTableViewController {
+    
+    func tableView(_ tableView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return covers.count
+    }
+    
+    func tableView(_ tableView: UITableView,
+                   cellForItemAt indexPath: IndexPath) -> UITableViewCell {
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: reuseIdentifier, for: indexPath) as! FoldingCell
+        
+//        cell.image = UIImage(named: covers[indexPath.row]["picture"]!)!
+        cell.name = covers[indexPath.row]["name"]
+//        cell.perk = covers[indexPath.row]["perk"]
+//        cell.address = covers[indexPath.row]["address"]
+        
+        
+        return cell
+    }
+}
 extension MainTableViewController {
 
     override func tableView(_: UITableView, numberOfRowsInSection _: Int) -> Int {

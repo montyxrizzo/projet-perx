@@ -21,23 +21,16 @@
  */
 
 import UIKit
-import Alamofire
-import AlamofireImage
-import ElongationPreview
 
 class MasterViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
-  let URL_GET_DATA = "https://simplifiedcoding.net/demos/marvel/"
-
+  
   // MARK: - Properties
   @IBOutlet var tableView: UITableView!
   @IBOutlet var searchFooter: SearchFooter!
+  
   var detailViewController: DetailViewController? = nil
   var companies = [Company]()
-  var brands = [Brand]()
-  var filteredcompanies = [Company]()
-    var filteredCompanies = [Company]()
-
-//  var filteredBrands = [Brands]()
+  var filteredCompanies = [Company]()
   let searchController = UISearchController(searchResultsController: nil)
   
   // MARK: - View Setup
@@ -47,41 +40,7 @@ class MasterViewController: UIViewController, UITableViewDataSource, UITableView
     // Setup the Search Controller
     searchController.searchResultsUpdater = self
     searchController.obscuresBackgroundDuringPresentation = false
-    searchController.searchBar.placeholder = "Search Brands"
-    navigationItem.searchController = searchController
-    definesPresentationContext = true
-    
-//    //fetching data from web api
-//    Alamofire.request(URL_GET_DATA).responseJSON { response in
-//
-//        //getting json
-//        if let json = response.result.value {
-//
-//            //converting json to NSArray
-//            let companiesArray : NSArray  = json as! NSArray
-//
-//            //traversing through all elements of the array
-//            for i in 0..<companiesArray.count{
-//
-//                //adding hero values to the hero list
-//                self.companies.append(Company(
-//                    name: (companiesArray[i] as AnyObject).value(forKey: "name") as? String,
-//                    category: (companiesArray[i] as AnyObject).value(forKey: "category") as? String,
-//                    imageurl: ((companiesArray[i] as AnyObject).value(forKey: "imageurl") as? String)!
-//                ))
-//
-//            }
-//
-//            //displaying data in tableview
-//            self.tableView.reloadData()
-//        }
-//
-//    }
-//
-    // Setup the Search Controller
-    searchController.searchResultsUpdater = self
-    searchController.obscuresBackgroundDuringPresentation = false
-    searchController.searchBar.placeholder = "Search Brands"
+    searchController.searchBar.placeholder = "Search Companies"
     navigationItem.searchController = searchController
     definesPresentationContext = true
     
@@ -93,43 +52,35 @@ class MasterViewController: UIViewController, UITableViewDataSource, UITableView
     tableView.tableFooterView = searchFooter
     
     companies = [
-        Company( name:"Apple",category:"Retail",imageurl:"asdfasd"),
-      Company( name:"Walgreens",category:"Retail",imageurl:"asdfasd"),
-      Company(name:"Sephora",category:"Retail", imageurl:"asdfasd"),
-      Company(name:"Di Bruno Bros.",category:"Dining", imageurl:"asdfasd"),
-      Company( name:"Target",category:"Retail",imageurl:"asdfasd"),
-      Company( name:"7-Eleven",category:"Other",imageurl:"asdfasd")
+        Company( name:"Apple",category:"Retail"),
+        Company( name:"Walgreens",category:"Retail"),
+        Company(name:"Sephora",category:"Retail"),
+        Company(name:"Di Bruno Bros.",category:"Dining"),
+        Company( name:"Target",category:"Retail"),
+        Company( name:"7-Eleven",category:"Other")
     ]
     
+
     
-    brands = [
-        Brand(category:"Retail", name:"Apple", locations: ["1273 Walnut st", "1222 Chestnut St."]),
-        Brand(category:"Retail", name:"Walgreens",locations: ["1273 Walnut st", "1222 Chestnut St."]),
-        Brand(category:"Retail", name:"Sephora",locations: ["1273 Walnut st", "1222 Chestnut St."]),
-        Brand(category:"Dining", name:"Di Bruno Bros.",locations: ["1273 Walnut st", "1222 Chestnut St."]),
-        Brand(category:"Retail", name:"Target",locations: ["1273 Walnut st", "1222 Chestnut St."]),
-        Brand(category:"Other", name:"7-Eleven",locations: ["1273 Walnut st", "1222 Chestnut St."])
-    ]
-   
     if let splitViewController = splitViewController {
-        let controllers = splitViewController.viewControllers
-        detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
+      let controllers = splitViewController.viewControllers
+      detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
     }
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    if splitViewController!.isCollapsed {
+      if let selectionIndexPath = tableView.indexPathForSelectedRow {
+        tableView.deselectRow(at: selectionIndexPath, animated: animated)
+      }
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        if splitViewController!.isCollapsed {
-            if let selectionIndexPath = tableView.indexPathForSelectedRow {
-                tableView.deselectRow(at: selectionIndexPath, animated: animated)
-            }
-        }
-        super.viewWillAppear(animated)
-    }
-    
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-    }
-    
+    super.viewWillAppear(animated)
+  }
+  
+  override func didReceiveMemoryWarning() {
+    super.didReceiveMemoryWarning()
+  }
+  
   // MARK: - Table View
   func numberOfSections(in tableView: UITableView) -> Int {
     return 1
@@ -146,24 +97,12 @@ class MasterViewController: UIViewController, UITableViewDataSource, UITableView
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-    let cell = tableView.dequeueReusableCell(withIdentifier: "companycell", for: indexPath) as! CompanyTableViewCell
+    let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
     let company: Company
-
-    Alamofire.request("https://httpbin.org/image/png").responseImage { response in
-    
-        
-        if let image = response.result.value {
-              cell.companyImageView.image = image
-          
-            
-        }
-    }
-    
     if isFiltering() {
       company = filteredCompanies[indexPath.row]
-
     } else {
-      company=companies[indexPath.row]
+      company = companies[indexPath.row]
     }
     cell.textLabel!.text = company.name
     cell.detailTextLabel!.text = company.category
@@ -176,7 +115,7 @@ class MasterViewController: UIViewController, UITableViewDataSource, UITableView
       if let indexPath = tableView.indexPathForSelectedRow {
         let company: Company
         if isFiltering() {
-          company = filteredcompanies[indexPath.row]
+          company = filteredCompanies[indexPath.row]
         } else {
           company = companies[indexPath.row]
         }
@@ -191,7 +130,7 @@ class MasterViewController: UIViewController, UITableViewDataSource, UITableView
   // MARK: - Private instance methods
   
   func filterContentForSearchText(_ searchText: String, scope: String = "All") {
-    filteredcompanies = companies.filter({( company : Company) -> Bool in
+    filteredCompanies = companies.filter({( company : Company) -> Bool in
       let doesCategoryMatch = (scope == "All") || (company.category == scope)
       
       if searchBarIsEmpty() {

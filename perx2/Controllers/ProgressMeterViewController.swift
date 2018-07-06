@@ -10,7 +10,9 @@ import UIKit
 import ProgressMeter
 
 class ProgressMeterViewController: UIViewController {
-
+    @IBAction fileprivate func close() {
+        self.dismiss(animated: true, completion: nil)
+    }
     @IBOutlet weak var progressControl: ProgressMeter!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -20,19 +22,19 @@ class ProgressMeterViewController: UIViewController {
             progressControl.progress = 14999 / 20000
             
         }
-        func visualSetup() {
-            progressControl.progressTintColor = .purple
-            progressControl.trackTintColor = .gray
-            progressControl.borderWidth = 1
-            progressControl.borderColor = .darkGray
-            progressControl.annotationTextColor = .purple
-            progressControl.dividerColor = .darkGray
-        }
+
         
         // Do any additional setup after loading the view.
     }
     
-    
+    func visualSetup() {
+        progressControl.progressTintColor = .purple
+        progressControl.trackTintColor = .gray
+        progressControl.borderWidth = 1
+        progressControl.borderColor = .darkGray
+        progressControl.annotationTextColor = .purple
+        progressControl.dividerColor = .darkGray
+    }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()

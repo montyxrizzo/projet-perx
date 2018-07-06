@@ -29,7 +29,9 @@ open class FoldingCell: UITableViewCell {
     /// UIView whitch display when cell open
     @IBOutlet open var containerView: UIView!
     @IBOutlet open var containerViewTop: NSLayoutConstraint!
+    @IBOutlet weak var brandImageView: UIImageView!
     
+    @IBOutlet weak var brandLabelName: UILabel!
     /// UIView whitch display when cell close
     @IBOutlet open var foregroundView: RotatedView!
     @IBOutlet open var foregroundViewTop: NSLayoutConstraint!
@@ -42,6 +44,24 @@ open class FoldingCell: UITableViewCell {
     @IBInspectable open var backViewColor: UIColor = UIColor.brown
     
     var animationItemViews: [RotatedView]?
+//    var brands = [Brand]()
+    var name: String?   {
+        didSet {
+            brandLabelName.text = name
+            
+        }
+        
+    }
+    
+
+    
+//    var image: UIImage? = UIImage()   {
+//        didSet {
+//            brandImageView.image = image
+//
+//        }
+//
+//    }
     
     /**
      Folding animation types

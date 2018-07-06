@@ -11,7 +11,9 @@ import UIKit
 import CollectionViewSlantedLayout
 
 class PerkViewController: UIViewController {
-
+    @IBAction fileprivate func close() {
+        self.dismiss(animated: true, completion: nil)
+    }
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var collectionViewLayout: CollectionViewSlantedLayout!
 

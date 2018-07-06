@@ -29,6 +29,9 @@ PODS:
   - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
     - GoogleToolboxForMac/Defines (= 2.1.4)
   - leveldb-library (1.20)
+  - NVActivityIndicatorView (4.2.1):
+    - NVActivityIndicatorView/Presenter (= 4.2.1)
+  - NVActivityIndicatorView/Presenter (4.2.1)
   - ProgressMeter (0.1.6)
   - SideMenu (4.0.0)
   - SwiftyJSON (4.1.0)
@@ -45,6 +48,7 @@ DEPENDENCIES:
   - GoogleMaps
   - GooglePlacePicker
   - GooglePlaces
+  - NVActivityIndicatorView
   - ProgressMeter
   - SideMenu
   - SwiftyJSON
@@ -66,6 +70,7 @@ SPEC REPOS:
     - GooglePlaces
     - GoogleToolboxForMac
     - leveldb-library
+    - NVActivityIndicatorView
     - ProgressMeter
     - SideMenu
     - SwiftyJSON
@@ -86,12 +91,13 @@ SPEC CHECKSUMS:
   GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
+  NVActivityIndicatorView: 8068ba3ad39cb44cbaab25d89ff2546b3f092681
   ProgressMeter: f24e399e876e4eb63a800d26639f1777b31e8a74
   SideMenu: 70ee5657df63ec3382660ec4ef470bf1cf5db07d
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
   TTGEmojiRate: 9b295b22e42874acfd717a9ae606e259995b83d0
   UICircularProgressRing: 3b472692ffca84060fd444ea5c0b387161067c54
 
-PODFILE CHECKSUM: c5d62b1928461f9e6a67b5e31bb8383d5c66c958
+PODFILE CHECKSUM: 372eac914738400890af0f09e8369836441ccb7b
 
 COCOAPODS: 1.5.3

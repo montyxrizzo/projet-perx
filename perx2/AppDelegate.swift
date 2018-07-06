@@ -11,12 +11,13 @@ import CoreData
 import GoogleMaps
 import GooglePlaces
 import GooglePlacePicker
+import ElongationPreview
+
 
 // 1
 let googleApiKey = "AIzaSyD4_RrnO9ar6LZcNOTuK9OVdzH46w9-_j0"
 internal let kPlacesAPIKey = "AIzaSyD4_RrnO9ar6LZcNOTuK9OVdzH46w9-_j0"
 internal let kMapsAPIKey = "AIzaSyD4_RrnO9ar6LZcNOTuK9OVdzH46w9-_j0"
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
@@ -25,6 +26,35 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        // Add dark view behind the status bar
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 0.1) {
+            let view = UIView(frame: UIApplication.shared.statusBarFrame)
+            view.backgroundColor = UIColor.black
+            view.alpha = 0.4
+            self.window?.addSubview(view)
+            self.window?.bringSubview(toFront: view)
+        }
+        
+        // Customize ElongationConfig
+        var config = ElongationConfig()
+        config.scaleViewScaleFactor = 0.9
+        config.topViewHeight = 190
+        config.bottomViewHeight = 170
+        config.bottomViewOffset = 20
+        config.parallaxFactor = 100
+        config.separatorHeight = 0.5
+        config.separatorColor = UIColor.white
+        
+        // Durations for presenting/dismissing detail screen
+        config.detailPresentingDuration = 0.4
+        config.detailDismissingDuration = 0.4
+        
+        // Customize behaviour
+        config.headerTouchAction = .collpaseOnBoth
+        
+        // Save created appearance object as default
+        ElongationConfig.shared = config
         
         GMSServices.provideAPIKey(googleApiKey)
         GMSPlacesClient.provideAPIKey(googleApiKey)
