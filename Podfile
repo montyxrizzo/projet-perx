@@ -24,7 +24,9 @@ pod 'Firebase/Database'
 pod 'NVActivityIndicatorView'
 #pod 'VegaScrollFlowLayout'
 pod 'FoldingCell'
+pod 'ChameleonFramework'
 pod 'ProgressMeter'
+pod 'OpenLocate'
 pod 'UICircularProgressRing'
 post_install do |installer|
     installer.pods_project.build_configurations.each do |config|

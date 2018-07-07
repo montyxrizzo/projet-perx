@@ -2,6 +2,9 @@ PODS:
   - Alamofire (4.7.2)
   - AlamofireImage (3.3.1):
     - Alamofire (~> 4.5)
+  - ChameleonFramework (2.1.0):
+    - ChameleonFramework/Default (= 2.1.0)
+  - ChameleonFramework/Default (2.1.0)
   - CollectionViewSlantedLayout (3.0.1)
   - ElongationPreview (1.1.2)
   - Firebase/CoreOnly (5.4.0):
@@ -32,6 +35,7 @@ PODS:
   - NVActivityIndicatorView (4.2.1):
     - NVActivityIndicatorView/Presenter (= 4.2.1)
   - NVActivityIndicatorView/Presenter (4.2.1)
+  - OpenLocate (1.4.0)
   - ProgressMeter (0.1.6)
   - SideMenu (4.0.0)
   - SwiftyJSON (4.1.0)
@@ -41,6 +45,7 @@ PODS:
 DEPENDENCIES:
   - Alamofire (~> 4.7)
   - AlamofireImage
+  - ChameleonFramework
   - CollectionViewSlantedLayout
   - ElongationPreview
   - Firebase/Database
@@ -49,6 +54,7 @@ DEPENDENCIES:
   - GooglePlacePicker
   - GooglePlaces
   - NVActivityIndicatorView
+  - OpenLocate
   - ProgressMeter
   - SideMenu
   - SwiftyJSON
@@ -59,6 +65,7 @@ SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
     - AlamofireImage
+    - ChameleonFramework
     - CollectionViewSlantedLayout
     - ElongationPreview
     - Firebase
@@ -71,6 +78,7 @@ SPEC REPOS:
     - GoogleToolboxForMac
     - leveldb-library
     - NVActivityIndicatorView
+    - OpenLocate
     - ProgressMeter
     - SideMenu
     - SwiftyJSON
@@ -80,6 +88,7 @@ SPEC REPOS:
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
   AlamofireImage: 3b35b586853abaf94ca1250f4e94cff3c21a4c0d
+  ChameleonFramework: d21a3cc247abfe5e37609a283a8238b03575cf64
   CollectionViewSlantedLayout: 8c8ebc112e3ac1c3318a916aa9c8d9f1901f0dd9
   ElongationPreview: a1b53f61d2086c0ce5c2061e5233bff25b93917d
   Firebase: d66f4f29c23f22d96808d9abc174d81d8eee968f
@@ -92,12 +101,13 @@ SPEC CHECKSUMS:
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   NVActivityIndicatorView: 8068ba3ad39cb44cbaab25d89ff2546b3f092681
+  OpenLocate: fe4583623c38ffff32f273f390031076c6c20d1e
   ProgressMeter: f24e399e876e4eb63a800d26639f1777b31e8a74
   SideMenu: 70ee5657df63ec3382660ec4ef470bf1cf5db07d
   SwiftyJSON: c29297daf073d2aa016295d5809cdd68045c39b3
   TTGEmojiRate: 9b295b22e42874acfd717a9ae606e259995b83d0
   UICircularProgressRing: 3b472692ffca84060fd444ea5c0b387161067c54
 
-PODFILE CHECKSUM: 372eac914738400890af0f09e8369836441ccb7b
+PODFILE CHECKSUM: 193e96c7ded891bad8fd680f57ee2669d571de79
 
 COCOAPODS: 1.5.3

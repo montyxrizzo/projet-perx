@@ -15,9 +15,7 @@
 		8305C1F020EBDB01004D0F3E /* LoremSwiftum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305C1EA20EBDAF9004D0F3E /* LoremSwiftum.swift */; };
 		8305C1F120EBDB01004D0F3E /* Roboto-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8305C1EB20EBDAF9004D0F3E /* Roboto-Bold.ttf */; };
 		8305C1F220EBDB01004D0F3E /* UIFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305C1EC20EBDB00004D0F3E /* UIFont.swift */; };
-		8305C1F320EBDB01004D0F3E /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305C1ED20EBDB00004D0F3E /* DetailViewController.swift */; };
 		8305C1F420EBDB01004D0F3E /* Roboto-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8305C1EE20EBDB01004D0F3E /* Roboto-Medium.ttf */; };
-		8305C1F620EBDB14004D0F3E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8305C1F520EBDB13004D0F3E /* Assets.xcassets */; };
 		8305C1FA20EBE052004D0F3E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8305C1F920EBE051004D0F3E /* ViewController.swift */; };
 		832630FC20ED2FBF00473FEE /* UICircularProgressRing.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 83BC1FB320EC3DC200565E7E /* UICircularProgressRing.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		833477E720EE609D002827CA /* FoldingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833477E620EE609C002827CA /* FoldingCell.swift */; };
@@ -41,6 +39,11 @@
 		8348475C20EFD291002FE72B /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8348475A20EFD291002FE72B /* LoginViewController.swift */; };
 		8348475D20EFD291002FE72B /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8348475B20EFD291002FE72B /* LoginViewController.xib */; };
 		8348475F20EFD3DE002FE72B /* HomescreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8348475E20EFD3DE002FE72B /* HomescreenViewController.swift */; };
+		8348476120EFF1B5002FE72B /* Apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 8348476020EFF1B2002FE72B /* Apple.png */; };
+		8348476320EFF290002FE72B /* Sephora.png in Resources */ = {isa = PBXBuildFile; fileRef = 8348476220EFF28C002FE72B /* Sephora.png */; };
+		8348476520EFF345002FE72B /* Inline-Logo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8348476420EFF342002FE72B /* Inline-Logo.pdf */; };
+		8348476720EFF4E4002FE72B /* Inline-Logo.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 8348476620EFF4E2002FE72B /* Inline-Logo.pdf */; };
+		8348476A20F11C79002FE72B /* AlamoFireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8348476920F11C79002FE72B /* AlamoFireViewController.swift */; };
 		837668CD20ED242E00842740 /* ProgressMeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837668CB20ED242E00842740 /* ProgressMeterViewController.swift */; };
 		837668CE20ED242E00842740 /* ProgressMeterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 837668CC20ED242E00842740 /* ProgressMeterViewController.xib */; };
 		837EADF520E8362800837DEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EADF420E8362800837DEE /* AppDelegate.swift */; };
@@ -51,20 +54,18 @@
 		837EAE1D20E9268700837DEE /* UIColor+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EAE1C20E9268600837DEE /* UIColor+Random.swift */; };
 		837EAE2220E92DED00837DEE /* PerkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EAE2120E92B7300837DEE /* PerkViewController.swift */; };
 		837EAE2E20E92F6F00837DEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837EAE2C20E92F6100837DEE /* LaunchScreen.storyboard */; };
-		837EAE3020E92F8A00837DEE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 837EAE2F20E92F8A00837DEE /* Assets.xcassets */; };
 		83BC1FAC20EBF79B00565E7E /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 83BC1FA820EBF79000565E7E /* Fonts */; };
 		83BC1FAD20EBF79B00565E7E /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BC1FA920EBF79800565E7E /* MainTableViewController.swift */; };
 		83BC1FAE20EBF79B00565E7E /* DemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BC1FAA20EBF79A00565E7E /* DemoCell.swift */; };
-		83BC1FAF20EBF79B00565E7E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83BC1FAB20EBF79A00565E7E /* Assets.xcassets */; };
 		83BC1FB220EC389600565E7E /* UICircularProgressRingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BC1FB120EC389500565E7E /* UICircularProgressRingViewController.swift */; };
 		83D0E91920EC5DE300777D7E /* saturn.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D0E91820EC5DE100777D7E /* saturn.png */; };
 		83D28E8F20E9C58300D36056 /* CandyTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D28E8A20E9C58100D36056 /* CandyTheme.swift */; };
 		83D28E9020E9C58300D36056 /* Candy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D28E8B20E9C58100D36056 /* Candy.swift */; };
 		83D28E9120E9C58300D36056 /* SearchFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D28E8C20E9C58200D36056 /* SearchFooter.swift */; };
 		83D28E9220E9C58300D36056 /* DepMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D28E8D20E9C58200D36056 /* DepMasterViewController.swift */; };
-		83D28E9320E9C58300D36056 /* DepDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D28E8E20E9C58200D36056 /* DepDetailViewController.swift */; };
-		83D28E9620E9D31100D36056 /* 7-eleven.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D28E9420E9D30E00D36056 /* 7-eleven.png */; };
-		83D28E9720E9D31100D36056 /* walgreens.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 83D28E9520E9D30F00D36056 /* walgreens.jpeg */; };
+		83D28E9320E9C58300D36056 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D28E8E20E9C58200D36056 /* DetailViewController.swift */; };
+		83D28E9620E9D31100D36056 /* 7-Eleven.png in Resources */ = {isa = PBXBuildFile; fileRef = 83D28E9420E9D30E00D36056 /* 7-Eleven.png */; };
+		83D28E9720E9D31100D36056 /* Walgreens.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 83D28E9520E9D30F00D36056 /* Walgreens.jpeg */; };
 		83D28E9920E9D7FB00D36056 /* PerkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D28E9820E9D7FB00D36056 /* PerkTableViewCell.swift */; };
 		83D28E9D20EAC7BE00D36056 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D28E9C20EAC7BE00D36056 /* Company.swift */; };
 		83D28EA120EACBE500D36056 /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D28EA020EACBE500D36056 /* CompanyTableViewCell.swift */; };
@@ -101,9 +102,7 @@
 		8305C1EA20EBDAF9004D0F3E /* LoremSwiftum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoremSwiftum.swift; sourceTree = "<group>"; };
 		8305C1EB20EBDAF9004D0F3E /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
 		8305C1EC20EBDB00004D0F3E /* UIFont.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIFont.swift; sourceTree = "<group>"; };
-		8305C1ED20EBDB00004D0F3E /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DetailViewController.swift; path = "../../../Downloads/elongation-preview-master/ElongationPreviewDemo/DetailViewController.swift"; sourceTree = "<group>"; };
 		8305C1EE20EBDB01004D0F3E /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
-		8305C1F520EBDB13004D0F3E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../Downloads/elongation-preview-master/ElongationPreviewDemo/Assets.xcassets"; sourceTree = "<group>"; };
 		8305C1F920EBE051004D0F3E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ViewController.swift; path = "../../../Downloads/elongation-preview-master/ElongationPreviewDemo/ViewController.swift"; sourceTree = "<group>"; };
 		833477E620EE609C002827CA /* FoldingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FoldingCell.swift; sourceTree = "<group>"; };
 		833477EA20EE79D6002827CA /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
@@ -127,6 +126,11 @@
 		8348475A20EFD291002FE72B /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8348475B20EFD291002FE72B /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		8348475E20EFD3DE002FE72B /* HomescreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomescreenViewController.swift; sourceTree = "<group>"; };
+		8348476020EFF1B2002FE72B /* Apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Apple.png; sourceTree = "<group>"; };
+		8348476220EFF28C002FE72B /* Sephora.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sephora.png; path = ../../.Trash/Sephora.png; sourceTree = "<group>"; };
+		8348476420EFF342002FE72B /* Inline-Logo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Inline-Logo.pdf"; sourceTree = "<group>"; };
+		8348476620EFF4E2002FE72B /* Inline-Logo.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Inline-Logo.pdf"; sourceTree = "<group>"; };
+		8348476920F11C79002FE72B /* AlamoFireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoFireViewController.swift; sourceTree = "<group>"; };
 		837668CB20ED242E00842740 /* ProgressMeterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressMeterViewController.swift; sourceTree = "<group>"; };
 		837668CC20ED242E00842740 /* ProgressMeterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressMeterViewController.xib; sourceTree = "<group>"; };
 		837EADF120E8362800837DEE /* perx2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = perx2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,14 +142,11 @@
 		837EAE1720E9265C00837DEE /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		837EAE1920E9267600837DEE /* CustomCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionCell.swift; sourceTree = "<group>"; };
 		837EAE1C20E9268600837DEE /* UIColor+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIColor+Random.swift"; path = "CollectionViewSlantedLayoutDemo/UIColor+Random.swift"; sourceTree = "<group>"; };
-		837EAE1E20E926C800837DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = CollectionViewSlantedLayoutDemo/Assets.xcassets; sourceTree = "<group>"; };
 		837EAE2120E92B7300837DEE /* PerkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerkViewController.swift; sourceTree = "<group>"; };
 		837EAE2C20E92F6100837DEE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
-		837EAE2F20E92F8A00837DEE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../Downloads/Final_Project/Pinterest/Assets/Assets.xcassets; sourceTree = "<group>"; };
 		83BC1FA820EBF79000565E7E /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
 		83BC1FA920EBF79800565E7E /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		83BC1FAA20EBF79A00565E7E /* DemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCell.swift; sourceTree = "<group>"; };
-		83BC1FAB20EBF79A00565E7E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../../Downloads/folding-cell-master-2/FoldingCell/FoldingCell-Demo/Assets.xcassets"; sourceTree = "<group>"; };
 		83BC1FB120EC389500565E7E /* UICircularProgressRingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UICircularProgressRingViewController.swift; sourceTree = "<group>"; };
 		83BC1FB320EC3DC200565E7E /* UICircularProgressRing.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UICircularProgressRing.framework; path = Carthage/Build/iOS/UICircularProgressRing.framework; sourceTree = "<group>"; };
 		83D0E91820EC5DE100777D7E /* saturn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = saturn.png; sourceTree = "<group>"; };
@@ -153,9 +154,9 @@
 		83D28E8B20E9C58100D36056 /* Candy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Candy.swift; sourceTree = "<group>"; };
 		83D28E8C20E9C58200D36056 /* SearchFooter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchFooter.swift; sourceTree = "<group>"; };
 		83D28E8D20E9C58200D36056 /* DepMasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepMasterViewController.swift; sourceTree = "<group>"; };
-		83D28E8E20E9C58200D36056 /* DepDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DepDetailViewController.swift; sourceTree = "<group>"; };
-		83D28E9420E9D30E00D36056 /* 7-eleven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "7-eleven.png"; sourceTree = "<group>"; };
-		83D28E9520E9D30F00D36056 /* walgreens.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = walgreens.jpeg; sourceTree = "<group>"; };
+		83D28E8E20E9C58200D36056 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		83D28E9420E9D30E00D36056 /* 7-Eleven.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "7-Eleven.png"; sourceTree = "<group>"; };
+		83D28E9520E9D30F00D36056 /* Walgreens.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Walgreens.jpeg; sourceTree = "<group>"; };
 		83D28E9820E9D7FB00D36056 /* PerkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerkTableViewCell.swift; sourceTree = "<group>"; };
 		83D28E9C20EAC7BE00D36056 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		83D28EA020EACBE500D36056 /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableViewCell.swift; sourceTree = "<group>"; };
@@ -198,6 +199,13 @@
 			path = "New Group";
 			sourceTree = "<group>";
 		};
+		8348476820EFF4F8002FE72B /* assets.xcassets */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = assets.xcassets;
+			sourceTree = "<group>";
+		};
 		837EADE820E8362700837DEE = {
 			isa = PBXGroup;
 			children = (
@@ -223,18 +231,18 @@
 			isa = PBXGroup;
 			children = (
 				83D6A97620EC594200BCD8EF /* background.imageset */,
-				83BC1FAB20EBF79A00565E7E /* Assets.xcassets */,
 				83BC1FAA20EBF79A00565E7E /* DemoCell.swift */,
 				83BC1FA820EBF79000565E7E /* Fonts */,
 				8345A33620EBA7DD00F17775 /* Models */,
 				837EADF420E8362800837DEE /* AppDelegate.swift */,
 				837EAE2020E92B1900837DEE /* Views */,
 				837EAE1F20E92B0500837DEE /* Controllers */,
-				83D28E9520E9D30F00D36056 /* walgreens.jpeg */,
-				8305C1F520EBDB13004D0F3E /* Assets.xcassets */,
-				83D28E9420E9D30E00D36056 /* 7-eleven.png */,
-				837EAE1E20E926C800837DEE /* Assets.xcassets */,
-				837EAE2F20E92F8A00837DEE /* Assets.xcassets */,
+				83D28E9520E9D30F00D36056 /* Walgreens.jpeg */,
+				8348476620EFF4E2002FE72B /* Inline-Logo.pdf */,
+				8348476020EFF1B2002FE72B /* Apple.png */,
+				83D28E9420E9D30E00D36056 /* 7-Eleven.png */,
+				8348476420EFF342002FE72B /* Inline-Logo.pdf */,
+				8348476220EFF28C002FE72B /* Sephora.png */,
 				837EAE1C20E9268600837DEE /* UIColor+Random.swift */,
 				837EADF820E8362800837DEE /* Main.storyboard */,
 				837EAE0020E8362A00837DEE /* LaunchScreen.storyboard */,
@@ -260,9 +268,8 @@
 				837EAE1720E9265C00837DEE /* SettingsController.swift */,
 				83D28E8B20E9C58100D36056 /* Candy.swift */,
 				83D28E8A20E9C58100D36056 /* CandyTheme.swift */,
-				83D28E8E20E9C58200D36056 /* DepDetailViewController.swift */,
+				83D28E8E20E9C58200D36056 /* DetailViewController.swift */,
 				8305C1E120EBDADE004D0F3E /* GridViewCell.swift */,
-				8305C1ED20EBDB00004D0F3E /* DetailViewController.swift */,
 				8305C1EA20EBDAF9004D0F3E /* LoremSwiftum.swift */,
 				83D6A97020EC58FB00BCD8EF /* PresentedViewController.swift */,
 				83D6A97120EC58FD00BCD8EF /* SideMenuTableViewController.swift */,
@@ -282,6 +289,7 @@
 				8348475A20EFD291002FE72B /* LoginViewController.swift */,
 				8348475B20EFD291002FE72B /* LoginViewController.xib */,
 				8348475E20EFD3DE002FE72B /* HomescreenViewController.swift */,
+				8348476920F11C79002FE72B /* AlamoFireViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -298,6 +306,7 @@
 				833477E620EE609C002827CA /* FoldingCell.swift */,
 				83D28E9820E9D7FB00D36056 /* PerkTableViewCell.swift */,
 				83D28E9C20EAC7BE00D36056 /* Company.swift */,
+				8348476820EFF4F8002FE72B /* assets.xcassets */,
 				8345A32C20EB9EAF00F17775 /* Images.xcassets */,
 				8345A32D20EB9EAF00F17775 /* MarkerInfoView.swift */,
 				8345A32B20EB9EAE00F17775 /* UIViewExtension.swift */,
@@ -383,22 +392,23 @@
 				8305C1F120EBDB01004D0F3E /* Roboto-Bold.ttf in Resources */,
 				837668CE20ED242E00842740 /* ProgressMeterViewController.xib in Resources */,
 				837EAE2E20E92F6F00837DEE /* LaunchScreen.storyboard in Resources */,
-				83D28E9620E9D31100D36056 /* 7-eleven.png in Resources */,
-				8305C1F620EBDB14004D0F3E /* Assets.xcassets in Resources */,
+				83D28E9620E9D31100D36056 /* 7-Eleven.png in Resources */,
 				83FE1DCE20E93122003597A8 /* covers.plist in Resources */,
 				8334780520EEBB8F002827CA /* GridViewCell.xib in Resources */,
 				833477F320EE8531002827CA /* GridViewCell in Resources */,
 				83D0E91920EC5DE300777D7E /* saturn.png in Resources */,
+				8348476320EFF290002FE72B /* Sephora.png in Resources */,
 				83D6A97920EC594300BCD8EF /* background.imageset in Resources */,
-				837EAE3020E92F8A00837DEE /* Assets.xcassets in Resources */,
 				8305C1EF20EBDB01004D0F3E /* Roboto-Regular.ttf in Resources */,
+				8348476520EFF345002FE72B /* Inline-Logo.pdf in Resources */,
 				8345A32E20EB9EAF00F17775 /* MarkerInfoView.xib in Resources */,
 				8348475D20EFD291002FE72B /* LoginViewController.xib in Resources */,
-				83D28E9720E9D31100D36056 /* walgreens.jpeg in Resources */,
+				83D28E9720E9D31100D36056 /* Walgreens.jpeg in Resources */,
+				8348476120EFF1B5002FE72B /* Apple.png in Resources */,
 				833477F220EE8531002827CA /* DemoElongationCell in Resources */,
 				8305C1F420EBDB01004D0F3E /* Roboto-Medium.ttf in Resources */,
+				8348476720EFF4E4002FE72B /* Inline-Logo.pdf in Resources */,
 				837EADFA20E8362800837DEE /* Main.storyboard in Resources */,
-				83BC1FAF20EBF79B00565E7E /* Assets.xcassets in Resources */,
 				833477F920EEBA90002827CA /* ElongationPreview in Resources */,
 				8305C1DC20EBCD36004D0F3E /* home_slow copy.gpx in Resources */,
 			);
@@ -416,11 +426,12 @@
 				"${SRCROOT}/Pods/Target Support Files/Pods-perx2/Pods-perx2-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
+				"${BUILT_PRODUCTS_DIR}/ChameleonFramework/ChameleonFramework.framework",
 				"${BUILT_PRODUCTS_DIR}/CollectionViewSlantedLayout/CollectionViewSlantedLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/ElongationPreview/ElongationPreview.framework",
-				"${BUILT_PRODUCTS_DIR}/FoldingCell/FoldingCell.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/OpenLocate/OpenLocate.framework",
 				"${BUILT_PRODUCTS_DIR}/ProgressMeter/ProgressMeter.framework",
 				"${BUILT_PRODUCTS_DIR}/SideMenu/SideMenu.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
@@ -432,11 +443,12 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ChameleonFramework.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CollectionViewSlantedLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ElongationPreview.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FoldingCell.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenLocate.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressMeter.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SideMenu.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
@@ -509,12 +521,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8348476A20F11C79002FE72B /* AlamoFireViewController.swift in Sources */,
 				8345A32F20EB9EAF00F17775 /* UIViewExtension.swift in Sources */,
 				83D6A97220EC58FD00BCD8EF /* PresentedViewController.swift in Sources */,
 				8345A33C20EBA7F600F17775 /* GoogleDataProvider.swift in Sources */,
 				8345A33420EBA71300F17775 /* TypesTableViewController.swift in Sources */,
 				8345A33B20EBA7F600F17775 /* GooglePlace.swift in Sources */,
-				83D28E9320E9C58300D36056 /* DepDetailViewController.swift in Sources */,
+				83D28E9320E9C58300D36056 /* DetailViewController.swift in Sources */,
 				83D28E9920E9D7FB00D36056 /* PerkTableViewCell.swift in Sources */,
 				83D6A97820EC594300BCD8EF /* MainViewController.swift in Sources */,
 				83D28E9220E9C58300D36056 /* DepMasterViewController.swift in Sources */,
@@ -549,7 +562,6 @@
 				837EAE1D20E9268700837DEE /* UIColor+Random.swift in Sources */,
 				8348475F20EFD3DE002FE72B /* HomescreenViewController.swift in Sources */,
 				837EADFD20E8362800837DEE /* perx2.xcdatamodeld in Sources */,
-				8305C1F320EBDB01004D0F3E /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

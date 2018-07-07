@@ -21,6 +21,9 @@
  */
 
 import UIKit
+import Alamofire
+import AlamofireImage
+import OpenLocate
 
 class MasterViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
   
@@ -32,8 +35,21 @@ class MasterViewController: UIViewController, UITableViewDataSource, UITableView
   var companies = [Company]()
   var filteredCompanies = [Company]()
   let searchController = UISearchController(searchResultsController: nil)
-  
-    
+//  let parameters: Parameters = [
+//        "x": 2,
+//        "y": 2
+//    ]
+//
+//    Alamofire.request(url, method: .post, parameters: parameters, encoding: JSONEncoding.default).responseJSON { (response: DataResponse<Any>) in
+//    if let response = response.result.value as? <insert Type of value> {
+//    let detailViewController:DetailViewController = DetailViewController()
+//    detailViewController.responseText = response
+//    self.present(detailViewController, animated: true, completion: nil)
+//
+//    } else {
+//    self.jsonDisplayError.text = "no response"
+//    }
+//    }
     
     
     
@@ -41,6 +57,9 @@ class MasterViewController: UIViewController, UITableViewDataSource, UITableView
   override func viewDidLoad() {
     super.viewDidLoad()
     
+    OpenLocate.shared.startTracking()
+
+//    jsonDisplayResult.text = resonseText
     // Setup the Search Controller
     searchController.searchResultsUpdater = self
     searchController.obscuresBackgroundDuringPresentation = false

@@ -12,15 +12,18 @@ import GoogleMaps
 import GooglePlaces
 import GooglePlacePicker
 import ElongationPreview
+import OpenLocate
+
 
 
 // 1
 let googleApiKey = "AIzaSyD4_RrnO9ar6LZcNOTuK9OVdzH46w9-_j0"
-internal let kPlacesAPIKey = "AIzaSyD4_RrnO9ar6LZcNOTuK9OVdzH46w9-_j0"
+internal let kPlacesAPIKey = "AIzaSyAolG3inckmIjxYvCipxdOUe06pccehNCs"
 internal let kMapsAPIKey = "AIzaSyD4_RrnO9ar6LZcNOTuK9OVdzH46w9-_j0"
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-
+    static let googleMapsApiKey = "AIzaSyD4_RrnO9ar6LZcNOTuK9OVdzH46w9-_j0"
+    static let googlePlacesAPIKey = "AIzaSyAolG3inckmIjxYvCipxdOUe06pccehNCs"
     var window: UIWindow?
 
 
@@ -34,6 +37,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             view.alpha = 0.4
             self.window?.addSubview(view)
             self.window?.bringSubview(toFront: view)
+        }
+//        let uuid = UUID(uuidString: "<YOUR_UUID>")!
+        let token = "AIzaSyBVXNSKrTGAzfUeBTyG5_1dcoYqk-EKV8U"
+        
+        let url = URL(string: "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=(yourlatitude),(yourlongitude)&radius=5000&keyword=starbucks&key=\(token)")!
+        let headers = ["Authorization": "Bearer \(token)"]
+        
+        let configuration = Configuration(url: url, headers: headers)
+//        let configuration = Configuration(endpoints: [endpoint], transmissionInterval: 3 * 60.0 * 60.0) // 3 Hours
+
+        do {
+            try OpenLocate.shared.initialize(with: configuration)
+        } catch {
+            print(error)
         }
         
         // Customize ElongationConfig
@@ -58,7 +75,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         GMSServices.provideAPIKey(googleApiKey)
         GMSPlacesClient.provideAPIKey(googleApiKey)
-        return true 
+        return true
+        
     }
 
     func applicationWillResignActive(_ application: UIApplication) {
