@@ -32,16 +32,22 @@ import Foundation
 
 
 
-class DetailViewController: UIViewController, CLLocationManagerDelegate {
+class DetailViewController: UIViewController, CLLocationManagerDelegate,UITableViewDataSource,UITableViewDelegate  {
   
   @IBOutlet weak var detailDescriptionLabel: UILabel!
   @IBOutlet weak var CompanyImageView: UIImageView!
-  @IBOutlet weak var tableView: UITableView!
     var jsonArray:NSMutableArray?
     var newArray: Array<String> = []
     var locationManager: CLLocationManager!
     let key = "AIzaSyAolG3inckmIjxYvCipxdOUe06pccehNCs"
-  
+    @IBOutlet weak var locationsTableView: UITableView!
+    //networking
+    
+    lazy var googleClient: GoogleClientRequest = GoogleClient()
+    //location
+    var currentLocation: CLLocation = CLLocation(latitude: 42.361145, longitude: -71.057083)
+    var locationName : String = "Starbucks"
+    var searchRadius : Int = 2500
   var responseText: String?
   var detailCompany: Company? {
     didSet {
@@ -51,7 +57,17 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate {
   }
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
+        if let detailCompany = detailCompany {
+
+        
         print("locations = \(locValue.latitude) \(locValue.longitude)")
+        Alamofire.request("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=\(locValue.latitude),\(locValue.longitude)&radius=100&keyword=starbucks&key=\(key)").responseJSON { (responseData) -> Void in
+            if((responseData.result.value) != nil) {
+                let swiftyJsonVar = JSON(responseData.result.value!)
+                print(swiftyJsonVar)
+            }
+            }
+        }
     }
   
   func configureView() {
@@ -60,6 +76,7 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate {
         detailDescriptionLabel.text = detailCompany.category
         CompanyImageView.image = UIImage(named:detailCompany.name!)
         title = detailCompany.name
+    
       }
     }
   }
@@ -89,36 +106,9 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate {
     }
   override func viewDidLoad() {
     super.viewDidLoad()
-    
-    Alamofire.request("http://api.androidhive.info/contacts/").responseJSON { (responseData) -> Void in
-        if((responseData.result.value) != nil) {
-            let swiftyJsonVar = JSON(responseData.result.value!)
-            print(swiftyJsonVar)
-        }
-    }
-    
-//    Alamofire.request(.GET, "https://rocky-meadow-1164.herokuapp.com/todo") .responseJSON { response in
-//        print(response.request)  // original URL request
-//        print(response.response) // URL response
-//        print(response.data)     // server data
-//        print(response.result)   // result of response serialization
-//
-//        if let JSON = response.result.value {
-//            self.jsonArray = JSON as? NSMutableArray
-//            for item in self.jsonArray! {
-//                print(item["name"]!)
-//                let string = item["name"]!
-//                print("String is \(string!)")
-//
-//                self.newArray.append(string! as! String)
-//            }
-//
-//            print("New array is \(self.newArray)")
-//
-//            self.tableView.reloadData()
-//        }
-//    }
-    
+    fetchGoogleData(forLocation: currentLocation)
+
+   
     
 
     
@@ -131,31 +121,73 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate {
         locationManager.startUpdatingLocation()
     }
     
-//    Alamofire.request(.GET, "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=39.9592474,-75.1614925&radius=5000&keyword=starbucks&key=AIzaSyAolG3inckmIjxYvCipxdOUe06pccehNCs").responseJSON { response in // 1
-//        print(response.request)  // original URL request
-//        print(response.response) // URL response
-//        print(response.data)     // server data
-//        print(response.result)   // result of response serialization
-//
-//        if let JSON = response.result.value {
-//            print("JSON: \(JSON)")
-//        }
-//    }
+
     configureView()
     
-    // Ask for Authorisation from the User.
    
     
   }
+    //Networking calls
+   
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! LocationsTableViewCell
+        googleClient.getGooglePlacesData(forKeyword: "Starbucks", location: currentLocation, withinMeters: 2500) { (response) in
+            
+            cell.textLabel?.text = response.results[indexPath.row].name
+            let locationName = response.results[indexPath.row]
+            cell.addressLabel?.text = locationName.address
+            cell.openLabel?.text = locationName.name
+        }
+        return cell
+        
+        
+    }
+    
   
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
   }
   
 }
+
+
 func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
     guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
     print("locations = \(locValue.latitude) \(locValue.longitude)")
     
 }
+//Networking calls
+extension DetailViewController {
+    func fetchGoogleData(forLocation: CLLocation) {
+        //guard let location = currentLocation else { return }
+        googleClient.getGooglePlacesData(forKeyword: "Starbucks", location: currentLocation, withinMeters: 2500) { (response) in
+            
+            self.printFirstFive(places: response.results)
+            
+        }
+    }
+    
+    func printFirstFive(places: [Place]) {
+        for place in places.prefix(5) {
+            print("*******NEW PLACE********")
+            let name = place.name
+            let address = place.address
+            let location = ("lat: \(place.geometry.location.latitude), lng: \(place.geometry.location.longitude)")
+            guard let open = place.openingHours?.open  else {
+                print("\(name) is located at \(address), \(location)")
+                return
+            }
+            if open {
+                print("\(name) is open, located at \(address), \(location)")
+            } else {
+                print("\(name) is closed, located at \(address), \(location)")
+            }
+        }
+    }
+}
+
 

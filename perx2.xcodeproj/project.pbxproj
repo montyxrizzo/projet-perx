@@ -46,6 +46,7 @@
 		8348476A20F11C79002FE72B /* AlamoFireViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8348476920F11C79002FE72B /* AlamoFireViewController.swift */; };
 		837668CD20ED242E00842740 /* ProgressMeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837668CB20ED242E00842740 /* ProgressMeterViewController.swift */; };
 		837668CE20ED242E00842740 /* ProgressMeterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 837668CC20ED242E00842740 /* ProgressMeterViewController.xib */; };
+		83788E2920F2921300D31AE7 /* LocationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83788E2820F2921100D31AE7 /* LocationsTableViewCell.swift */; };
 		837EADF520E8362800837DEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EADF420E8362800837DEE /* AppDelegate.swift */; };
 		837EADFA20E8362800837DEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837EADF820E8362800837DEE /* Main.storyboard */; };
 		837EADFD20E8362800837DEE /* perx2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 837EADFB20E8362800837DEE /* perx2.xcdatamodeld */; };
@@ -54,6 +55,13 @@
 		837EAE1D20E9268700837DEE /* UIColor+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EAE1C20E9268600837DEE /* UIColor+Random.swift */; };
 		837EAE2220E92DED00837DEE /* PerkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EAE2120E92B7300837DEE /* PerkViewController.swift */; };
 		837EAE2E20E92F6F00837DEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837EAE2C20E92F6100837DEE /* LaunchScreen.storyboard */; };
+		839F304820F14D9900AD1B39 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F304720F14D9900AD1B39 /* Location.swift */; };
+		839F304C20F1540B00AD1B39 /* GoogleClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F304B20F1540A00AD1B39 /* GoogleClient.swift */; };
+		839F304E20F1545700AD1B39 /* ResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F304D20F1545600AD1B39 /* ResponseModels.swift */; };
+		839F305E20F2691100AD1B39 /* LocationViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F305D20F2690F00AD1B39 /* LocationViewControllerTableViewCell.swift */; };
+		839F306020F2692900AD1B39 /* Hero.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F305F20F2692700AD1B39 /* Hero.swift */; };
+		839F306220F26A6C00AD1B39 /* LocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F306120F26A6A00AD1B39 /* LocationViewController.swift */; };
+		839F306420F2703100AD1B39 /* LocationsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F306320F2702F00AD1B39 /* LocationsTableViewController.swift */; };
 		83BC1FAC20EBF79B00565E7E /* Fonts in Resources */ = {isa = PBXBuildFile; fileRef = 83BC1FA820EBF79000565E7E /* Fonts */; };
 		83BC1FAD20EBF79B00565E7E /* MainTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BC1FA920EBF79800565E7E /* MainTableViewController.swift */; };
 		83BC1FAE20EBF79B00565E7E /* DemoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BC1FAA20EBF79A00565E7E /* DemoCell.swift */; };
@@ -133,6 +141,7 @@
 		8348476920F11C79002FE72B /* AlamoFireViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamoFireViewController.swift; sourceTree = "<group>"; };
 		837668CB20ED242E00842740 /* ProgressMeterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressMeterViewController.swift; sourceTree = "<group>"; };
 		837668CC20ED242E00842740 /* ProgressMeterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressMeterViewController.xib; sourceTree = "<group>"; };
+		83788E2820F2921100D31AE7 /* LocationsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsTableViewCell.swift; sourceTree = "<group>"; };
 		837EADF120E8362800837DEE /* perx2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = perx2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		837EADF420E8362800837DEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		837EADF920E8362800837DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -144,6 +153,13 @@
 		837EAE1C20E9268600837DEE /* UIColor+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIColor+Random.swift"; path = "CollectionViewSlantedLayoutDemo/UIColor+Random.swift"; sourceTree = "<group>"; };
 		837EAE2120E92B7300837DEE /* PerkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerkViewController.swift; sourceTree = "<group>"; };
 		837EAE2C20E92F6100837DEE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		839F304720F14D9900AD1B39 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		839F304B20F1540A00AD1B39 /* GoogleClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleClient.swift; sourceTree = "<group>"; };
+		839F304D20F1545600AD1B39 /* ResponseModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponseModels.swift; path = "../../../Downloads/GooglePlacesCodable-master/GooglePlacesCodable/ResponseModels.swift"; sourceTree = "<group>"; };
+		839F305D20F2690F00AD1B39 /* LocationViewControllerTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewControllerTableViewCell.swift; sourceTree = "<group>"; };
+		839F305F20F2692700AD1B39 /* Hero.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Hero.swift; sourceTree = "<group>"; };
+		839F306120F26A6A00AD1B39 /* LocationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationViewController.swift; sourceTree = "<group>"; };
+		839F306320F2702F00AD1B39 /* LocationsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsTableViewController.swift; sourceTree = "<group>"; };
 		83BC1FA820EBF79000565E7E /* Fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Fonts; sourceTree = "<group>"; };
 		83BC1FA920EBF79800565E7E /* MainTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainTableViewController.swift; sourceTree = "<group>"; };
 		83BC1FAA20EBF79A00565E7E /* DemoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DemoCell.swift; sourceTree = "<group>"; };
@@ -259,7 +275,9 @@
 			isa = PBXGroup;
 			children = (
 				83BC1FA920EBF79800565E7E /* MainTableViewController.swift */,
+				839F305D20F2690F00AD1B39 /* LocationViewControllerTableViewCell.swift */,
 				83D0E91820EC5DE100777D7E /* saturn.png */,
+				839F305F20F2692700AD1B39 /* Hero.swift */,
 				833477F420EEB668002827CA /* UICollectionView.swift */,
 				833477F520EEB66A002827CA /* UITableView.swift */,
 				8345A33320EBA71300F17775 /* MapViewController.swift */,
@@ -275,10 +293,12 @@
 				83D6A97120EC58FD00BCD8EF /* SideMenuTableViewController.swift */,
 				8305C1EB20EBDAF9004D0F3E /* Roboto-Bold.ttf */,
 				8305C1EE20EBDB01004D0F3E /* Roboto-Medium.ttf */,
+				83788E2820F2921100D31AE7 /* LocationsTableViewCell.swift */,
 				8305C1E920EBDAF4004D0F3E /* Roboto-Regular.ttf */,
 				833477EA20EE79D6002827CA /* MasterViewController.swift */,
 				8305C1EC20EBDB00004D0F3E /* UIFont.swift */,
 				8305C1F920EBE051004D0F3E /* ViewController.swift */,
+				839F306120F26A6A00AD1B39 /* LocationViewController.swift */,
 				8305C1E020EBDADD004D0F3E /* Villa.swift */,
 				83D28E8D20E9C58200D36056 /* DepMasterViewController.swift */,
 				83D28E8C20E9C58200D36056 /* SearchFooter.swift */,
@@ -288,6 +308,7 @@
 				837668CC20ED242E00842740 /* ProgressMeterViewController.xib */,
 				8348475A20EFD291002FE72B /* LoginViewController.swift */,
 				8348475B20EFD291002FE72B /* LoginViewController.xib */,
+				839F306320F2702F00AD1B39 /* LocationsTableViewController.swift */,
 				8348475E20EFD3DE002FE72B /* HomescreenViewController.swift */,
 				8348476920F11C79002FE72B /* AlamoFireViewController.swift */,
 			);
@@ -311,6 +332,9 @@
 				8345A32D20EB9EAF00F17775 /* MarkerInfoView.swift */,
 				8345A32B20EB9EAE00F17775 /* UIViewExtension.swift */,
 				83D28EA020EACBE500D36056 /* CompanyTableViewCell.swift */,
+				839F304720F14D9900AD1B39 /* Location.swift */,
+				839F304B20F1540A00AD1B39 /* GoogleClient.swift */,
+				839F304D20F1545600AD1B39 /* ResponseModels.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -530,17 +554,22 @@
 				83D28E9320E9C58300D36056 /* DetailViewController.swift in Sources */,
 				83D28E9920E9D7FB00D36056 /* PerkTableViewCell.swift in Sources */,
 				83D6A97820EC594300BCD8EF /* MainViewController.swift in Sources */,
+				839F306020F2692900AD1B39 /* Hero.swift in Sources */,
 				83D28E9220E9C58300D36056 /* DepMasterViewController.swift in Sources */,
 				83BC1FAD20EBF79B00565E7E /* MainTableViewController.swift in Sources */,
 				8305C1E620EBDAE0004D0F3E /* Villa.swift in Sources */,
 				83D6A97320EC58FD00BCD8EF /* SideMenuTableViewController.swift in Sources */,
 				83D28EA120EACBE500D36056 /* CompanyTableViewCell.swift in Sources */,
+				839F306220F26A6C00AD1B39 /* LocationViewController.swift in Sources */,
+				839F304E20F1545700AD1B39 /* ResponseModels.swift in Sources */,
+				839F305E20F2691100AD1B39 /* LocationViewControllerTableViewCell.swift in Sources */,
 				8305C1F020EBDB01004D0F3E /* LoremSwiftum.swift in Sources */,
 				837EAE2220E92DED00837DEE /* PerkViewController.swift in Sources */,
 				8345A33A20EBA7F600F17775 /* PlaceMarker.swift in Sources */,
 				83BC1FAE20EBF79B00565E7E /* DemoCell.swift in Sources */,
 				837EAE1820E9265C00837DEE /* SettingsController.swift in Sources */,
 				83D28E8F20E9C58300D36056 /* CandyTheme.swift in Sources */,
+				83788E2920F2921300D31AE7 /* LocationsTableViewCell.swift in Sources */,
 				8305C1E720EBDAE0004D0F3E /* GridViewCell.swift in Sources */,
 				8305C1F220EBDB01004D0F3E /* UIFont.swift in Sources */,
 				8345A33120EB9EAF00F17775 /* MarkerInfoView.swift in Sources */,
@@ -549,17 +578,20 @@
 				837EAE1A20E9267600837DEE /* CustomCollectionCell.swift in Sources */,
 				83D28E9120E9C58300D36056 /* SearchFooter.swift in Sources */,
 				837668CD20ED242E00842740 /* ProgressMeterViewController.swift in Sources */,
+				839F306420F2703100AD1B39 /* LocationsTableViewController.swift in Sources */,
 				83BC1FB220EC389600565E7E /* UICircularProgressRingViewController.swift in Sources */,
 				8348475C20EFD291002FE72B /* LoginViewController.swift in Sources */,
 				83D28E9D20EAC7BE00D36056 /* Company.swift in Sources */,
 				833477F720EEB66C002827CA /* UITableView.swift in Sources */,
 				8334780420EEBB8F002827CA /* DemoElongationCell.swift in Sources */,
 				8345A33520EBA71300F17775 /* MapViewController.swift in Sources */,
+				839F304820F14D9900AD1B39 /* Location.swift in Sources */,
 				837EADF520E8362800837DEE /* AppDelegate.swift in Sources */,
 				833477F620EEB66C002827CA /* UICollectionView.swift in Sources */,
 				833477EB20EE79D7002827CA /* MasterViewController.swift in Sources */,
 				83D28E9020E9C58300D36056 /* Candy.swift in Sources */,
 				837EAE1D20E9268700837DEE /* UIColor+Random.swift in Sources */,
+				839F304C20F1540B00AD1B39 /* GoogleClient.swift in Sources */,
 				8348475F20EFD3DE002FE72B /* HomescreenViewController.swift in Sources */,
 				837EADFD20E8362800837DEE /* perx2.xcdatamodeld in Sources */,
 			);
