@@ -14,7 +14,6 @@ class BrandViewController: UIViewController {
 
     @IBOutlet weak var collectionView: UICollectionView!
     @IBOutlet weak var collectionViewLayout: CollectionViewSlantedLayout!
-
     internal var covers = [[String:String]]()
 
     let reuseIdentifier = "brandCustomViewCell"

@@ -29,7 +29,6 @@
 		837EADF420E8362800837DEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		837EADF920E8362800837DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		837EADFC20E8362800837DEE /* perx2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = perx2.xcdatamodel; sourceTree = "<group>"; };
-		837EAE0120E8362A00837DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		837EAE0320E8362A00837DEE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		837EAE1720E9265C00837DEE /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
 		837EAE1920E9267600837DEE /* CustomCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionCell.swift; sourceTree = "<group>"; };
@@ -89,7 +88,6 @@
 				837EAE2F20E92F8A00837DEE /* Assets.xcassets */,
 				837EAE1C20E9268600837DEE /* UIColor+Random.swift */,
 				837EADF820E8362800837DEE /* Main.storyboard */,
-				837EAE0020E8362A00837DEE /* LaunchScreen.storyboard */,
 				837EAE2C20E92F6100837DEE /* LaunchScreen.storyboard */,
 				83FE1DCD20E93122003597A8 /* covers.plist */,
 				837EAE0320E8362A00837DEE /* Info.plist */,
@@ -262,14 +260,6 @@
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		837EAE0020E8362A00837DEE /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				837EAE0120E8362A00837DEE /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
@@ -395,6 +385,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HA5USQ3XE8;
 				INFOPLIST_FILE = perx2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -414,6 +405,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = HA5USQ3XE8;
 				INFOPLIST_FILE = perx2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
