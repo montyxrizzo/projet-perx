@@ -29,6 +29,7 @@ import AlamofireImage
 import MapKit
 import CoreLocation
 import Foundation
+import UICircularProgressRing
 
 
 
@@ -45,7 +46,7 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate,UITableV
     
     lazy var googleClient: GoogleClientRequest = GoogleClient()
     //location
-    var currentLocation: CLLocation = CLLocation(latitude: 42.361145, longitude: -71.057083)
+    var currentLocation: CLLocation = CLLocation(latitude: 39.959185122763195, longitude: -75.16160762910337)
     var locationName : String = "Starbucks"
     var searchRadius : Int = 2500
   var responseText: String?
@@ -58,10 +59,9 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate,UITableV
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let locValue: CLLocationCoordinate2D = manager.location?.coordinate else { return }
         if let detailCompany = detailCompany {
-
-        
-        print("locations = \(locValue.latitude) \(locValue.longitude)")
-        Alamofire.request("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=\(locValue.latitude),\(locValue.longitude)&radius=100&keyword=starbucks&key=\(key)").responseJSON { (responseData) -> Void in
+            locationName = detailCompany.name!
+            print("locations = \(locValue.latitude) \(locValue.longitude)")
+            Alamofire.request("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=\(locValue.latitude),\(locValue.longitude)&radius=100&keyword=starbucks&key=\(key)").responseJSON { (responseData) -> Void in
             if((responseData.result.value) != nil) {
                 let swiftyJsonVar = JSON(responseData.result.value!)
                 print(swiftyJsonVar)
@@ -73,9 +73,9 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate,UITableV
   func configureView() {
     if let detailCompany = detailCompany {
       if let detailDescriptionLabel = detailDescriptionLabel, let CompanyImageView = CompanyImageView {
-        detailDescriptionLabel.text = detailCompany.category
+        detailDescriptionLabel.text = detailCompany.name
         CompanyImageView.image = UIImage(named:detailCompany.name!)
-        title = detailCompany.name
+        title = detailCompany.name!
     
       }
     }
@@ -106,6 +106,10 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate,UITableV
     }
   override func viewDidLoad() {
     super.viewDidLoad()
+    let progressRing = UICircularProgressRing(frame: CGRect(x: 0, y: 0, width: 240, height: 240))
+    // Change any of the properties you'd like
+    progressRing.maxValue = 50
+    progressRing.innerRingColor = UIColor.blue
     fetchGoogleData(forLocation: currentLocation)
 
    
@@ -134,14 +138,17 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate,UITableV
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! LocationsTableViewCell
-        googleClient.getGooglePlacesData(forKeyword: "Starbucks", location: currentLocation, withinMeters: 2500) { (response) in
-            
+        googleClient.getGooglePlacesData(forKeyword: (detailDescriptionLabel?.text)!, location: currentLocation, withinMeters: 2500) { (response) in
+           
             cell.textLabel?.text = response.results[indexPath.row].name
             let locationName = response.results[indexPath.row]
             cell.addressLabel?.text = locationName.address
             cell.openLabel?.text = locationName.name
+            
         }
+            
         return cell
         
         

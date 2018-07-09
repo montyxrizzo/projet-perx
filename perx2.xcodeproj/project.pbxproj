@@ -47,6 +47,12 @@
 		837668CD20ED242E00842740 /* ProgressMeterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837668CB20ED242E00842740 /* ProgressMeterViewController.swift */; };
 		837668CE20ED242E00842740 /* ProgressMeterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 837668CC20ED242E00842740 /* ProgressMeterViewController.xib */; };
 		83788E2920F2921300D31AE7 /* LocationsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83788E2820F2921100D31AE7 /* LocationsTableViewCell.swift */; };
+		83788E2B20F2B60800D31AE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83788E2A20F2B60300D31AE7 /* Assets.xcassets */; };
+		83788E2F20F2B7BC00D31AE7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 83788E2E20F2B7B700D31AE7 /* Assets.xcassets */; };
+		83788E3220F2BE8E00D31AE7 /* Target.png in Resources */ = {isa = PBXBuildFile; fileRef = 83788E3020F2BE8100D31AE7 /* Target.png */; };
+		83788E3320F2BE8E00D31AE7 /* Walgreens.png in Resources */ = {isa = PBXBuildFile; fileRef = 83788E3120F2BE8900D31AE7 /* Walgreens.png */; };
+		83788E3520F2C18D00D31AE7 /* GNC.png in Resources */ = {isa = PBXBuildFile; fileRef = 83788E3420F2C18600D31AE7 /* GNC.png */; };
+		83788E3720F2C1BD00D31AE7 /* Walgreens.png in Resources */ = {isa = PBXBuildFile; fileRef = 83788E3620F2C1B900D31AE7 /* Walgreens.png */; };
 		837EADF520E8362800837DEE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EADF420E8362800837DEE /* AppDelegate.swift */; };
 		837EADFA20E8362800837DEE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837EADF820E8362800837DEE /* Main.storyboard */; };
 		837EADFD20E8362800837DEE /* perx2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 837EADFB20E8362800837DEE /* perx2.xcdatamodeld */; };
@@ -77,6 +83,7 @@
 		83D28E9920E9D7FB00D36056 /* PerkTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D28E9820E9D7FB00D36056 /* PerkTableViewCell.swift */; };
 		83D28E9D20EAC7BE00D36056 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D28E9C20EAC7BE00D36056 /* Company.swift */; };
 		83D28EA120EACBE500D36056 /* CompanyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D28EA020EACBE500D36056 /* CompanyTableViewCell.swift */; };
+		83D502AD20F402DD00D58AA6 /* RatingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D502AC20F402DD00D58AA6 /* RatingViewController.swift */; };
 		83D6A96F20EC4ABC00BCD8EF /* UICircularProgressRing.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83BC1FB320EC3DC200565E7E /* UICircularProgressRing.framework */; };
 		83D6A97220EC58FD00BCD8EF /* PresentedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D6A97020EC58FB00BCD8EF /* PresentedViewController.swift */; };
 		83D6A97320EC58FD00BCD8EF /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83D6A97120EC58FD00BCD8EF /* SideMenuTableViewController.swift */; };
@@ -142,6 +149,12 @@
 		837668CB20ED242E00842740 /* ProgressMeterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProgressMeterViewController.swift; sourceTree = "<group>"; };
 		837668CC20ED242E00842740 /* ProgressMeterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProgressMeterViewController.xib; sourceTree = "<group>"; };
 		83788E2820F2921100D31AE7 /* LocationsTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsTableViewCell.swift; sourceTree = "<group>"; };
+		83788E2A20F2B60300D31AE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = Controllers/Assets.xcassets; sourceTree = "<group>"; };
+		83788E2E20F2B7B700D31AE7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = ../../perx2/perx2/CollectionViewSlantedLayoutDemo/Assets.xcassets; sourceTree = "<group>"; };
+		83788E3020F2BE8100D31AE7 /* Target.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Target.png; sourceTree = "<group>"; };
+		83788E3120F2BE8900D31AE7 /* Walgreens.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Walgreens.png; sourceTree = "<group>"; };
+		83788E3420F2C18600D31AE7 /* GNC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = GNC.png; sourceTree = "<group>"; };
+		83788E3620F2C1B900D31AE7 /* Walgreens.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Walgreens.png; sourceTree = "<group>"; };
 		837EADF120E8362800837DEE /* perx2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = perx2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		837EADF420E8362800837DEE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		837EADF920E8362800837DEE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -176,6 +189,7 @@
 		83D28E9820E9D7FB00D36056 /* PerkTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerkTableViewCell.swift; sourceTree = "<group>"; };
 		83D28E9C20EAC7BE00D36056 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		83D28EA020EACBE500D36056 /* CompanyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyTableViewCell.swift; sourceTree = "<group>"; };
+		83D502AC20F402DD00D58AA6 /* RatingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RatingViewController.swift; sourceTree = "<group>"; };
 		83D6A97020EC58FB00BCD8EF /* PresentedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentedViewController.swift; sourceTree = "<group>"; };
 		83D6A97120EC58FD00BCD8EF /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
 		83D6A97520EC594000BCD8EF /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -248,22 +262,28 @@
 			children = (
 				83D6A97620EC594200BCD8EF /* background.imageset */,
 				83BC1FAA20EBF79A00565E7E /* DemoCell.swift */,
+				83788E2E20F2B7B700D31AE7 /* Assets.xcassets */,
 				83BC1FA820EBF79000565E7E /* Fonts */,
 				8345A33620EBA7DD00F17775 /* Models */,
 				837EADF420E8362800837DEE /* AppDelegate.swift */,
 				837EAE2020E92B1900837DEE /* Views */,
 				837EAE1F20E92B0500837DEE /* Controllers */,
 				83D28E9520E9D30F00D36056 /* Walgreens.jpeg */,
+				83788E3020F2BE8100D31AE7 /* Target.png */,
+				83788E3120F2BE8900D31AE7 /* Walgreens.png */,
 				8348476620EFF4E2002FE72B /* Inline-Logo.pdf */,
 				8348476020EFF1B2002FE72B /* Apple.png */,
 				83D28E9420E9D30E00D36056 /* 7-Eleven.png */,
 				8348476420EFF342002FE72B /* Inline-Logo.pdf */,
+				83788E3620F2C1B900D31AE7 /* Walgreens.png */,
+				83788E3420F2C18600D31AE7 /* GNC.png */,
 				8348476220EFF28C002FE72B /* Sephora.png */,
 				837EAE1C20E9268600837DEE /* UIColor+Random.swift */,
 				837EADF820E8362800837DEE /* Main.storyboard */,
 				837EAE0020E8362A00837DEE /* LaunchScreen.storyboard */,
 				837EAE2C20E92F6100837DEE /* LaunchScreen.storyboard */,
 				8345A32A20EB9EAE00F17775 /* MarkerInfoView.xib */,
+				83788E2A20F2B60300D31AE7 /* Assets.xcassets */,
 				83FE1DCD20E93122003597A8 /* covers.plist */,
 				837EAE0320E8362A00837DEE /* Info.plist */,
 				837EADFB20E8362800837DEE /* perx2.xcdatamodeld */,
@@ -311,6 +331,7 @@
 				839F306320F2702F00AD1B39 /* LocationsTableViewController.swift */,
 				8348475E20EFD3DE002FE72B /* HomescreenViewController.swift */,
 				8348476920F11C79002FE72B /* AlamoFireViewController.swift */,
+				83D502AC20F402DD00D58AA6 /* RatingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -416,11 +437,14 @@
 				8305C1F120EBDB01004D0F3E /* Roboto-Bold.ttf in Resources */,
 				837668CE20ED242E00842740 /* ProgressMeterViewController.xib in Resources */,
 				837EAE2E20E92F6F00837DEE /* LaunchScreen.storyboard in Resources */,
+				83788E3220F2BE8E00D31AE7 /* Target.png in Resources */,
 				83D28E9620E9D31100D36056 /* 7-Eleven.png in Resources */,
+				83788E2F20F2B7BC00D31AE7 /* Assets.xcassets in Resources */,
 				83FE1DCE20E93122003597A8 /* covers.plist in Resources */,
 				8334780520EEBB8F002827CA /* GridViewCell.xib in Resources */,
 				833477F320EE8531002827CA /* GridViewCell in Resources */,
 				83D0E91920EC5DE300777D7E /* saturn.png in Resources */,
+				83788E3320F2BE8E00D31AE7 /* Walgreens.png in Resources */,
 				8348476320EFF290002FE72B /* Sephora.png in Resources */,
 				83D6A97920EC594300BCD8EF /* background.imageset in Resources */,
 				8305C1EF20EBDB01004D0F3E /* Roboto-Regular.ttf in Resources */,
@@ -430,11 +454,14 @@
 				83D28E9720E9D31100D36056 /* Walgreens.jpeg in Resources */,
 				8348476120EFF1B5002FE72B /* Apple.png in Resources */,
 				833477F220EE8531002827CA /* DemoElongationCell in Resources */,
+				83788E3720F2C1BD00D31AE7 /* Walgreens.png in Resources */,
 				8305C1F420EBDB01004D0F3E /* Roboto-Medium.ttf in Resources */,
 				8348476720EFF4E4002FE72B /* Inline-Logo.pdf in Resources */,
+				83788E3520F2C18D00D31AE7 /* GNC.png in Resources */,
 				837EADFA20E8362800837DEE /* Main.storyboard in Resources */,
 				833477F920EEBA90002827CA /* ElongationPreview in Resources */,
 				8305C1DC20EBCD36004D0F3E /* home_slow copy.gpx in Resources */,
+				83788E2B20F2B60800D31AE7 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,6 +481,7 @@
 				"${BUILT_PRODUCTS_DIR}/CollectionViewSlantedLayout/CollectionViewSlantedLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/ElongationPreview/ElongationPreview.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/KYCircularProgress/KYCircularProgress.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/OpenLocate/OpenLocate.framework",
 				"${BUILT_PRODUCTS_DIR}/ProgressMeter/ProgressMeter.framework",
@@ -471,6 +499,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/CollectionViewSlantedLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ElongationPreview.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KYCircularProgress.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenLocate.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressMeter.framework",
@@ -576,6 +605,7 @@
 				833477E720EE609D002827CA /* FoldingCell.swift in Sources */,
 				8305C1FA20EBE052004D0F3E /* ViewController.swift in Sources */,
 				837EAE1A20E9267600837DEE /* CustomCollectionCell.swift in Sources */,
+				83D502AD20F402DD00D58AA6 /* RatingViewController.swift in Sources */,
 				83D28E9120E9C58300D36056 /* SearchFooter.swift in Sources */,
 				837668CD20ED242E00842740 /* ProgressMeterViewController.swift in Sources */,
 				839F306420F2703100AD1B39 /* LocationsTableViewController.swift in Sources */,

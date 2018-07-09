@@ -77,8 +77,8 @@ class MasterViewController: UIViewController, UITableViewDataSource, UITableView
     companies = [
         Company( name:"Apple",category:"Retail", imageurl:"abc"),
         Company( name:"Walgreens",category:"Retail",imageurl: "asd"),
-        Company(name:"Sephora",category:"Retail",imageurl: "asd"),
-        Company(name:"Di Bruno Bros.",category:"Dining",imageurl:"asd"),
+        Company(name:"Sephora",category:"Restail",imageurl: "asd"),
+        Company(name:"GNC",category:"Other",imageurl:"asd"),
         Company( name:"Target",category:"Retail",imageurl:"asd"),
         Company( name:"7-Eleven",category:"Other",imageurl:"asd")
     ]

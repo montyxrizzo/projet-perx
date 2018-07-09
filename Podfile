@@ -27,6 +27,7 @@ pod 'FoldingCell'
 pod 'ChameleonFramework'
 pod 'ProgressMeter'
 pod 'OpenLocate'
+pod 'KYCircularProgress'
 pod 'UICircularProgressRing'
 post_install do |installer|
     installer.pods_project.build_configurations.each do |config|

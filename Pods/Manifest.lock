@@ -31,6 +31,7 @@ PODS:
   - GoogleToolboxForMac/Defines (2.1.4)
   - "GoogleToolboxForMac/NSData+zlib (2.1.4)":
     - GoogleToolboxForMac/Defines (= 2.1.4)
+  - KYCircularProgress (1.2.0)
   - leveldb-library (1.20)
   - NVActivityIndicatorView (4.2.1):
     - NVActivityIndicatorView/Presenter (= 4.2.1)
@@ -53,6 +54,7 @@ DEPENDENCIES:
   - GoogleMaps
   - GooglePlacePicker
   - GooglePlaces
+  - KYCircularProgress
   - NVActivityIndicatorView
   - OpenLocate
   - ProgressMeter
@@ -76,6 +78,7 @@ SPEC REPOS:
     - GooglePlacePicker
     - GooglePlaces
     - GoogleToolboxForMac
+    - KYCircularProgress
     - leveldb-library
     - NVActivityIndicatorView
     - OpenLocate
@@ -99,6 +102,7 @@ SPEC CHECKSUMS:
   GooglePlacePicker: 59ea44db173c58486ad6123993e81feefcbce9c3
   GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
   GoogleToolboxForMac: 91c824d21e85b31c2aae9bb011c5027c9b4e738f
+  KYCircularProgress: b289be602d7c7cde5b4c88f84738231776f3557d
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   NVActivityIndicatorView: 8068ba3ad39cb44cbaab25d89ff2546b3f092681
   OpenLocate: fe4583623c38ffff32f273f390031076c6c20d1e
@@ -108,6 +112,6 @@ SPEC CHECKSUMS:
   TTGEmojiRate: 9b295b22e42874acfd717a9ae606e259995b83d0
   UICircularProgressRing: 3b472692ffca84060fd444ea5c0b387161067c54
 
-PODFILE CHECKSUM: 193e96c7ded891bad8fd680f57ee2669d571de79
+PODFILE CHECKSUM: 69eb3cd1ae1ff18724bbd6bc1b93154afd6fe070
 
 COCOAPODS: 1.5.3
