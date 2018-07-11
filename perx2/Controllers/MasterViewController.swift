@@ -27,11 +27,16 @@ import OpenLocate
 
 class MasterViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
   
-  // MARK: - Properties
+    
+
+    @IBOutlet weak var menuButton: UIBarButtonItem!
+    // MARK: - Properties
   @IBOutlet var tableView: UITableView!
   @IBOutlet var searchFooter: SearchFooter!
   
   var detailViewController: DetailViewController? = nil
+  var masterViewController: MasterViewController?
+
   var companies = [Company]()
   var filteredCompanies = [Company]()
   let searchController = UISearchController(searchResultsController: nil)
@@ -88,6 +93,7 @@ class MasterViewController: UIViewController, UITableViewDataSource, UITableView
     if let splitViewController = splitViewController {
       let controllers = splitViewController.viewControllers
       detailViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? DetailViewController
+//        masterViewController = (controllers[controllers.count-1] as! UINavigationController).topViewController as? MasterViewController
     }
   }
   

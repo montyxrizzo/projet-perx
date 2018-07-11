@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "B4868EA8BEFBF2993E4A453EAD1EC455"
+               BlueprintIdentifier = "1F6CBF9D8F726A37F816CD99640F8910"
                BuildableName = "TTGEmojiRate.framework"
                BlueprintName = "TTGEmojiRate"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "B4868EA8BEFBF2993E4A453EAD1EC455"
+            BlueprintIdentifier = "1F6CBF9D8F726A37F816CD99640F8910"
             BuildableName = "TTGEmojiRate.framework"
             BlueprintName = "TTGEmojiRate"
             ReferencedContainer = "container:Pods.xcodeproj">

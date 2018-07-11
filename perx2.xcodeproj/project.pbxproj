@@ -61,6 +61,7 @@
 		837EAE1D20E9268700837DEE /* UIColor+Random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EAE1C20E9268600837DEE /* UIColor+Random.swift */; };
 		837EAE2220E92DED00837DEE /* PerkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837EAE2120E92B7300837DEE /* PerkViewController.swift */; };
 		837EAE2E20E92F6F00837DEE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 837EAE2C20E92F6100837DEE /* LaunchScreen.storyboard */; };
+		837FCF5F20F58A14005E69BD /* LocationsWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 837FCF5E20F58A13005E69BD /* LocationsWrapper.swift */; };
 		839F304820F14D9900AD1B39 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F304720F14D9900AD1B39 /* Location.swift */; };
 		839F304C20F1540B00AD1B39 /* GoogleClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F304B20F1540A00AD1B39 /* GoogleClient.swift */; };
 		839F304E20F1545700AD1B39 /* ResponseModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 839F304D20F1545600AD1B39 /* ResponseModels.swift */; };
@@ -166,6 +167,7 @@
 		837EAE1C20E9268600837DEE /* UIColor+Random.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "UIColor+Random.swift"; path = "CollectionViewSlantedLayoutDemo/UIColor+Random.swift"; sourceTree = "<group>"; };
 		837EAE2120E92B7300837DEE /* PerkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PerkViewController.swift; sourceTree = "<group>"; };
 		837EAE2C20E92F6100837DEE /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		837FCF5E20F58A13005E69BD /* LocationsWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsWrapper.swift; sourceTree = "<group>"; };
 		839F304720F14D9900AD1B39 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		839F304B20F1540A00AD1B39 /* GoogleClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoogleClient.swift; sourceTree = "<group>"; };
 		839F304D20F1545600AD1B39 /* ResponseModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = ResponseModels.swift; path = "../../../Downloads/GooglePlacesCodable-master/GooglePlacesCodable/ResponseModels.swift"; sourceTree = "<group>"; };
@@ -221,6 +223,7 @@
 		8345A33620EBA7DD00F17775 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				837FCF5E20F58A13005E69BD /* LocationsWrapper.swift */,
 				8345A33920EBA7F500F17775 /* GoogleDataProvider.swift */,
 				8345A33820EBA7F500F17775 /* GooglePlace.swift */,
 				8345A33720EBA7F400F17775 /* PlaceMarker.swift */,
@@ -482,6 +485,7 @@
 				"${BUILT_PRODUCTS_DIR}/ElongationPreview/ElongationPreview.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
 				"${BUILT_PRODUCTS_DIR}/KYCircularProgress/KYCircularProgress.framework",
+				"${BUILT_PRODUCTS_DIR}/MBCircularProgressBar/MBCircularProgressBar.framework",
 				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
 				"${BUILT_PRODUCTS_DIR}/OpenLocate/OpenLocate.framework",
 				"${BUILT_PRODUCTS_DIR}/ProgressMeter/ProgressMeter.framework",
@@ -500,6 +504,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ElongationPreview.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/KYCircularProgress.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBCircularProgressBar.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/OpenLocate.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/ProgressMeter.framework",
@@ -582,6 +587,7 @@
 				8345A33B20EBA7F600F17775 /* GooglePlace.swift in Sources */,
 				83D28E9320E9C58300D36056 /* DetailViewController.swift in Sources */,
 				83D28E9920E9D7FB00D36056 /* PerkTableViewCell.swift in Sources */,
+				837FCF5F20F58A14005E69BD /* LocationsWrapper.swift in Sources */,
 				83D6A97820EC594300BCD8EF /* MainViewController.swift in Sources */,
 				839F306020F2692900AD1B39 /* Hero.swift in Sources */,
 				83D28E9220E9C58300D36056 /* DepMasterViewController.swift in Sources */,

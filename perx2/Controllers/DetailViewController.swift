@@ -34,21 +34,29 @@ import UICircularProgressRing
 
 
 class DetailViewController: UIViewController, CLLocationManagerDelegate,UITableViewDataSource,UITableViewDelegate  {
-  
+    @IBOutlet weak var locationsTableView: UITableView!
+    var CompanyObs:LocationsWrapper?
+    var company: Company? {
+        didSet {
+            refreshUI()
+
+        }
+    }
   @IBOutlet weak var detailDescriptionLabel: UILabel!
   @IBOutlet weak var CompanyImageView: UIImageView!
     var jsonArray:NSMutableArray?
     var newArray: Array<String> = []
     var locationManager: CLLocationManager!
     let key = "AIzaSyAolG3inckmIjxYvCipxdOUe06pccehNCs"
-    @IBOutlet weak var locationsTableView: UITableView!
     //networking
     
     lazy var googleClient: GoogleClientRequest = GoogleClient()
     //location
+    
     var currentLocation: CLLocation = CLLocation(latitude: 39.959185122763195, longitude: -75.16160762910337)
     var locationName : String = "Starbucks"
     var searchRadius : Int = 2500
+    
   var responseText: String?
   var detailCompany: Company? {
     didSet {
@@ -76,10 +84,20 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate,UITableV
         detailDescriptionLabel.text = detailCompany.name
         CompanyImageView.image = UIImage(named:detailCompany.name!)
         title = detailCompany.name!
+        let _ = googleClient.getGooglePlacesData(forKeyword: detailCompany.name!, location: currentLocation, withinMeters: 2500){ (response) in
+////            self.returnFirstFive(places: response.results)
+//                    if let error = response.result.error {
+//                        completionHandler(.failure(error))
+                        return
+//                    }
+//            let locationWrapperResult = detailCompany.address!
+            }
+        }
+        
     
       }
     }
-  }
+  
     func downloadLocations(contentID: String, completion: @escaping ([String]?) -> Void) {
       
         // 1
@@ -106,6 +124,9 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate,UITableV
     }
   override func viewDidLoad() {
     super.viewDidLoad()
+  
+   
+    
     let progressRing = UICircularProgressRing(frame: CGRect(x: 0, y: 0, width: 240, height: 240))
     // Change any of the properties you'd like
     progressRing.maxValue = 50
@@ -131,28 +152,34 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate,UITableV
    
     
   }
+    func refreshUI() {
+        loadViewIfNeeded()
+        
+    }
     //Networking calls
    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 3
     }
     
+  
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! LocationsTableViewCell
         googleClient.getGooglePlacesData(forKeyword: (detailDescriptionLabel?.text)!, location: currentLocation, withinMeters: 2500) { (response) in
-           
+            
             cell.textLabel?.text = response.results[indexPath.row].name
             let locationName = response.results[indexPath.row]
             cell.addressLabel?.text = locationName.address
             cell.openLabel?.text = locationName.name
             
         }
-            
+        
         return cell
         
         
     }
+    
     
   
   override func didReceiveMemoryWarning() {
@@ -169,12 +196,42 @@ func locationManager(_ manager: CLLocationManager, didUpdateLocations locations:
 }
 //Networking calls
 extension DetailViewController {
+    
+    
+//
+//    private class func locationsArrayFromResponse(_ response: DataResponse<Any>) -> Result<LocationsWrapper> {
+//        guard response.result.error == nil else {
+//            // got an error in getting the data, need to handle it
+//            print(response.result.error!)
+//            return .failure(response.result.error!)
+//        }
+//
+//        // make sure we got JSON and it's a dictionary
+//        guard let json = response.result.value as? [String: Any] else {
+//            print("didn't get locations object as JSON from API")
+//        }
+//
+//        let wrapper:LocationsWrapper = LocationsWrapper()
+//        wrapper.count = json["count"] as? Int
+//
+//        var allLocations: [Place] = []
+//        if let results = json["results"] as? [[String: Any]] {
+//            for jsonLocations in results {
+//                let locations = Place()
+//                allLocations.append(locations)
+//            }
+//        }
+//        wrapper.companies = allLocations
+//        return .success(wrapper)
+//    }
+//
+
     func fetchGoogleData(forLocation: CLLocation) {
         //guard let location = currentLocation else { return }
         googleClient.getGooglePlacesData(forKeyword: "Starbucks", location: currentLocation, withinMeters: 2500) { (response) in
-            
+
             self.printFirstFive(places: response.results)
-            
+
         }
     }
     
