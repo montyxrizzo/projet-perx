@@ -220,11 +220,19 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		8328242120F8A89D00E992BC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				8345A33920EBA7F500F17775 /* GoogleDataProvider.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
 		8345A33620EBA7DD00F17775 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				837FCF5E20F58A13005E69BD /* LocationsWrapper.swift */,
-				8345A33920EBA7F500F17775 /* GoogleDataProvider.swift */,
+				839F304720F14D9900AD1B39 /* Location.swift */,
 				8345A33820EBA7F500F17775 /* GooglePlace.swift */,
 				8345A33720EBA7F400F17775 /* PlaceMarker.swift */,
 			);
@@ -263,8 +271,10 @@
 		837EADF320E8362800837DEE /* perx2 */ = {
 			isa = PBXGroup;
 			children = (
+				8328242120F8A89D00E992BC /* Services */,
 				83D6A97620EC594200BCD8EF /* background.imageset */,
 				83BC1FAA20EBF79A00565E7E /* DemoCell.swift */,
+				833477F020EE852F002827CA /* DemoElongationCell */,
 				83788E2E20F2B7B700D31AE7 /* Assets.xcassets */,
 				83BC1FA820EBF79000565E7E /* Fonts */,
 				8345A33620EBA7DD00F17775 /* Models */,
@@ -346,7 +356,6 @@
 				8334780220EEBB8D002827CA /* DemoElongationCell.swift */,
 				8334780320EEBB8E002827CA /* GridViewCell.xib */,
 				837EAE1920E9267600837DEE /* CustomCollectionCell.swift */,
-				833477F020EE852F002827CA /* DemoElongationCell */,
 				833477F120EE8530002827CA /* GridViewCell */,
 				833477E620EE609C002827CA /* FoldingCell.swift */,
 				83D28E9820E9D7FB00D36056 /* PerkTableViewCell.swift */,
@@ -356,7 +365,6 @@
 				8345A32D20EB9EAF00F17775 /* MarkerInfoView.swift */,
 				8345A32B20EB9EAE00F17775 /* UIViewExtension.swift */,
 				83D28EA020EACBE500D36056 /* CompanyTableViewCell.swift */,
-				839F304720F14D9900AD1B39 /* Location.swift */,
 				839F304B20F1540A00AD1B39 /* GoogleClient.swift */,
 				839F304D20F1545600AD1B39 /* ResponseModels.swift */,
 			);

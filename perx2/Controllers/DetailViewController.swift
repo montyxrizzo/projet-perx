@@ -35,13 +35,17 @@ import UICircularProgressRing
 
 class DetailViewController: UIViewController, CLLocationManagerDelegate,UITableViewDataSource,UITableViewDelegate  {
     @IBOutlet weak var locationsTableView: UITableView!
+    @IBOutlet weak var progressRing: UICircularProgressRing!
     var CompanyObs:LocationsWrapper?
-    var company: Company? {
+    
+    var response: GooglePlacesResponse? {
         didSet {
             refreshUI()
 
         }
     }
+    var likelyPlaces: [GooglePlacesResponse] = []
+    var selectedPlace: GooglePlacesResponse?
   @IBOutlet weak var detailDescriptionLabel: UILabel!
   @IBOutlet weak var CompanyImageView: UIImageView!
     var jsonArray:NSMutableArray?
@@ -85,12 +89,6 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate,UITableV
         CompanyImageView.image = UIImage(named:detailCompany.name!)
         title = detailCompany.name!
         let _ = googleClient.getGooglePlacesData(forKeyword: detailCompany.name!, location: currentLocation, withinMeters: 2500){ (response) in
-////            self.returnFirstFive(places: response.results)
-//                    if let error = response.result.error {
-//                        completionHandler(.failure(error))
-                        return
-//                    }
-//            let locationWrapperResult = detailCompany.address!
             }
         }
         
@@ -122,14 +120,16 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate,UITableV
 //                completion(tags)
 //        }
     }
+    
   override func viewDidLoad() {
     super.viewDidLoad()
-  
-   
+    locationsTableView.delegate = self
+    locationsTableView.dataSource = self
+    locationsTableView.register(UITableViewCell.self, forCellReuseIdentifier: "LocationsTableViewCell")
     
     let progressRing = UICircularProgressRing(frame: CGRect(x: 0, y: 0, width: 240, height: 240))
     // Change any of the properties you'd like
-    progressRing.maxValue = 50
+    self.progressRing.maxValue = 50
     progressRing.innerRingColor = UIColor.blue
     fetchGoogleData(forLocation: currentLocation)
 
@@ -149,9 +149,14 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate,UITableV
 
     configureView()
     
-   
-    
   }
+//    override func viewWillAppear(){
+//        UIView.animate(withDuration: 10.0){
+//            self.progressRing.value = 60
+//        }
+//    }
+
+
     func refreshUI() {
         loadViewIfNeeded()
         
@@ -166,19 +171,26 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate,UITableV
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! LocationsTableViewCell
+//        let collectionItem = likelyPlaces[indexPath.row]
         googleClient.getGooglePlacesData(forKeyword: (detailDescriptionLabel?.text)!, location: currentLocation, withinMeters: 2500) { (response) in
             
-            cell.textLabel?.text = response.results[indexPath.row].name
-            let locationName = response.results[indexPath.row]
-            cell.addressLabel?.text = locationName.address
-            cell.openLabel?.text = locationName.name
+            cell.textLabel?.text = "test"
+            let locationName = "Test"
+            cell.addressLabel?.text = "Test"
+            cell.openLabel?.text = "Test"
+//            cell.textLabel?.text = response.results[indexPath.row].name
+//            let locationName = response.results[indexPath.row]
+//            cell.addressLabel?.text = locationName.address
+//            cell.openLabel?.text = locationName.name
             
         }
         
         return cell
         
         
+        
     }
+    
     
     
   
@@ -187,6 +199,7 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate,UITableV
   }
   
 }
+
 
 
 func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -253,5 +266,7 @@ extension DetailViewController {
         }
     }
 }
+
+
 
 
