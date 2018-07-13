@@ -96,55 +96,13 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate,UITableV
       }
     }
   
-    func downloadLocations(contentID: String, completion: @escaping ([String]?) -> Void) {
-      
-        // 1
-//        Alamofire.request("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=(LocValue.latitude),(yourlongitude)&radius=5000&keyword=starbucks&key=\(key)",
-//                          parameters: ["content": contentID],
-//                          headers: ["Authorization": "Basic xxx"])
-//            // 2
-//            .responseJSON { response in
-//                guard response.result.isSuccess,
-//                    let value = response.result.value else {
-//                        print("Error while fetching tags: \(String(describing: response.result.error))")
-//                        completion(nil)
-//                        return
-//                }
-//
-//                // 3
-//                let tags = JSON(value)["results"][0]["tags"].array?.map { json in
-//                    json["tag"].stringValue
-//                }
-//
-//                // 4
-//                completion(tags)
-//        }
-    }
+   
     
   override func viewDidLoad() {
     super.viewDidLoad()
     locationsTableView.delegate = self
     locationsTableView.dataSource = self
-    locationsTableView.register(UITableViewCell.self, forCellReuseIdentifier: "LocationsTableViewCell")
-    
-    let progressRing = UICircularProgressRing(frame: CGRect(x: 0, y: 0, width: 240, height: 240))
-    // Change any of the properties you'd like
-    self.progressRing.maxValue = 50
-    progressRing.innerRingColor = UIColor.blue
-    fetchGoogleData(forLocation: currentLocation)
-
    
-    
-
-    
-    if (CLLocationManager.locationServicesEnabled())
-    {
-        locationManager = CLLocationManager()
-        locationManager.delegate = self
-        locationManager.desiredAccuracy = kCLLocationAccuracyBest
-        locationManager.requestAlwaysAuthorization()
-        locationManager.startUpdatingLocation()
-    }
     
 
     configureView()
@@ -164,6 +122,8 @@ class DetailViewController: UIViewController, CLLocationManagerDelegate,UITableV
     //Networking calls
    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+//        return GooglePlacesResponse().count
+//        gross hack
         return 3
     }
     

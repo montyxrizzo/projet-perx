@@ -72,6 +72,8 @@ class LocationViewController: UIViewController, UITableViewDataSource, UITableVi
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        LocationsTableView = self
+        
         fetchGoogleData(forLocation: currentLocation)
 
      
